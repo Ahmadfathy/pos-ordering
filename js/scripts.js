@@ -1,6 +1,30 @@
 $(document).ready(function(){
   $(".level-three .card").append('<a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="absolute_link"></a>');
+});
 
-  //Horizental Scroll
-  $('.horiz_container_outer').horizontalScroll();
+$(function() {
+
+  $(".numbers-row").prepend('<div class="inc button">+</div>');
+  $(".numbers-row").append('<div class="dec button">-</div>');
+
+  $(".button").on("click", function() {
+
+    var $button = $(this);
+    var oldValue = $button.parent().find("input").val();
+
+    if ($button.text() == "+") {
+  	  var newVal = parseFloat(oldValue) + 1;
+  	} else {
+	   // Don't allow decrementing below zero
+      if (oldValue > 0) {
+        var newVal = parseFloat(oldValue) - 1;
+	    } else {
+        newVal = 0;
+      }
+	  }
+
+    $button.parent().find("input").val(newVal);
+
+  });
+
 });

@@ -18,24 +18,69 @@
 <body>
 
   <main>
-    <div class="container-fluid">
-      <section class="new-order">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo-light.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="nav-search-box">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item">
+            <div class="input-group search-input-group">
+              <input type="text" class="form-control" aria-describedby="button-addon4" placeholder="Search">
+              <div class="input-group-append" id="button-addon4">
+                <button class="btn btn-light" type="button">
+                  <ion-icon name="search-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item text-white active">
+            <a class="nav-link" href="#">
+              <span>Orders</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <span>amr.ahmed2061@gmail.com</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="btn btn-sm btn-success">Close</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="new-order">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6 pr-1">
+          <div class="col-md-5 pr-1">
             <div class="order-preview">
-              <div class="row">
-                <div class="col-12">
-                  <div class="text-center mb-3">
-                    <h6 class="text-info mb-0">#65486</h6>
-                  </div>
-                </div>
-                <div class="col-6">
+              <div class="row align-items-center">
+                <div class="col-3">
                   <div class="info-1">
                     <ion-icon name="person-circle-outline" class="text-primary" size="large"></ion-icon>
                     <span>Name Here</span>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 order-title">
+                  <div class="text-center p-2">
+                    <h6 class="text-dark font-weight-bolder mb-0">#65486</h6>
+                    <p class="m-0">Take Out</p>
+                  </div>
+                </div>
+                <div class="col-3">
                   <div class="float-right">
                     <ion-icon name="apps-outline" class="text-primary" size="large"></ion-icon>
                   </div>
@@ -44,307 +89,377 @@
               <div class="order-details">
                 <div class="table-box">
                   <table class="table table-borderless">
-                    <tr>
-                      <td>
-                        <h6 class="mb-0">
-                          Item Name
-                        </h6>
-                        <div class="item_modifires">
-                          <p class="mb-0">Modifire 1</p>
-                          <p class="mb-0">Modifire 2</p>
-                          <p class="mb-0">Modifire 3</p>
-                        </div>
-                        <div class="note_box">
-                          <a href="#" class="add_note">
-                            <ion-icon name="alert-circle-outline"></ion-icon>
-                          </a>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetu
-                          </p>
-                        </div>
-                      </td>
-                      <td>
-                        <h6 class="quantity mb-0">
-                          1
-                        </h6>
-                        <p class="mb-0">1</p>
-                        <p class="mb-0">2</p>
-                        <p class="mb-0">3</p>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                        <p class="mb-0">KDW50</p>
-                        <p class="mb-0">KDW50</p>
-                        <p class="mb-0">KDW50</p>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                        <p class="mb-0">KDW50</p>
-                        <p class="mb-0">KDW50</p>
-                        <p class="mb-0">KDW50</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <h6 class="mb-0">
-                          Item Name
-                        </h6>
-                      </td>
-                      <td>
-                        <h6 class="quantity mb-0">
-                          1
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <h6 class="mb-0">
-                          Item Name
-                        </h6>
-                      </td>
-                      <td>
-                        <h6 class="quantity mb-0">
-                          1
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <h6 class="mb-0">
-                          Item Name
-                        </h6>
-                      </td>
-                      <td>
-                        <h6 class="quantity mb-0">
-                          1
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <h6 class="mb-0">
-                          Item Name
-                        </h6>
-                      </td>
-                      <td>
-                        <h6 class="quantity mb-0">
-                          1
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <h6 class="mb-0">
-                          Item Name
-                        </h6>
-                      </td>
-                      <td>
-                        <h6 class="quantity mb-0">
-                          1
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <h6 class="mb-0">
-                          Item Name
-                        </h6>
-                      </td>
-                      <td>
-                        <h6 class="quantity mb-0">
-                          1
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <h6 class="mb-0">
-                          Item Name
-                        </h6>
-                      </td>
-                      <td>
-                        <h6 class="quantity mb-0">
-                          1
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <h6 class="mb-0">
-                          Item Name
-                        </h6>
-                      </td>
-                      <td>
-                        <h6 class="quantity mb-0">
-                          1
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <h6 class="mb-0">
-                          Item Name
-                        </h6>
-                      </td>
-                      <td>
-                        <h6 class="quantity mb-0">
-                          1
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <h6 class="mb-0">
-                          Item Name
-                        </h6>
-                      </td>
-                      <td>
-                        <h6 class="quantity mb-0">
-                          1
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <h6 class="mb-0">
-                          Item Name
-                        </h6>
-                      </td>
-                      <td>
-                        <h6 class="quantity mb-0">
-                          1
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                      <td class="text-right">
-                        <h6 class="mb-0">
-                          KDW50
-                        </h6>
-                      </td>
-                    </tr>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                          <div class="item_modifires">
+                            <p class="mb-0">Modifire 1</p>
+                            <p class="mb-0">Modifire 2</p>
+                            <p class="mb-0">Modifire 3</p>
+                          </div>
+                          <div class="note_box">
+                            <a href="#" class="add_note">
+                              <ion-icon name="pricetag-outline"></ion-icon>
+                            </a>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetu
+                            </p>
+                          </div>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                          <p class="mb-0">1</p>
+                          <p class="mb-0">2</p>
+                          <p class="mb-0">3</p>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                          <p class="mb-0">KDW50</p>
+                          <p class="mb-0">KDW50</p>
+                          <p class="mb-0">KDW50</p>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                          <p class="mb-0">KDW50</p>
+                          <p class="mb-0">KDW50</p>
+                          <p class="mb-0">KDW50</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td colspan="4">
+                          <div class="pricing-area">
+                            <p class="m-0">
+                              discounts: <strong>KW 20</strong>
+                            </p>
+                            <p class="m-0">
+                              Sub Total: <strong>KW 30</strong>
+                            </p>
+                            <p class="m-0">
+                              Surcharge: <strong>KW 18</strong>
+                            </p>
+                            <p class="m-0">
+                              Tax: <strong>KW 18</strong>
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tfoot>
                   </table>
                 </div>
-                <div class="pricing-area">
-                  <p class="m-0">
-                    discounts: <strong>KW 20</strong>
-                  </p>
-                  <p class="m-0">
-                    Sub Total: <strong>KW 30</strong>
-                  </p>
-                  <p class="m-0">
-                    Surcharge: <strong>KW 18</strong>
-                  </p>
-                  <p class="m-0">
-                    Tax: <strong>KW 18</strong>
-                  </p>
+              </div>
+              <div class="actions">
+                <div class="row">
+                  <div class="col-8">
+                    <div class="row">
+                      <div class="col-4 pr-1"><button class="btn btn-block btn-info font-weight-bolder">Cancel</button>
+                      </div>
+                      <div class="col-4 pr-1 pl-1"><button
+                          class="btn btn-block btn-info font-weight-bolder">Hold</button>
+                      </div>
+                      <div class="col-4 pl-1"><button class="btn btn-block btn-info font-weight-bolder">Send</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <p>
+                      <strong>Total</strong>
+                      <strong class="float-right">KWD24,00</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="extra-actions mt-3">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-6">
+                    <div class="row">
+                      <div class="col pr-1">
+                        <button class="btn btn-outline-primary btn-sm">
+                          <ion-icon name="barcode-outline"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="col pr-1 pl-1">
+                        <button class="btn btn-outline-secondary btn-sm">
+                          <ion-icon name="link-outline"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="col pr-1 pl-1">
+                        <button class="btn btn-outline-success btn-sm">
+                          <ion-icon name="add-outline"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="col pr-1 pl-1">
+                        <button class="btn btn-outline-warning btn-sm">
+                          <ion-icon name="share-social-outline"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="col pl-1">
+                        <button class="btn btn-outline-info btn-sm">
+                          <ion-icon name="cog-outline"></ion-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card shadow border-0">
+                      <div class="card-body p-3">
+                        <strong>Total</strong>
+                        <strong class="float-right">KWD24,00</strong>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <!-- <div class="btns-area d-flex justify-content-between">
@@ -363,16 +478,8 @@
               </div> -->
             </div>
           </div>
-          <div class="col-md-6 pl-1">
+          <div class="col-md-7">
             <div class="products-tree">
-              <div class="input-group search-input-group mb-2">
-                <input type="text" class="form-control" aria-describedby="button-addon4">
-                <div class="input-group-append" id="button-addon4">
-                  <button class="btn btn-primary" type="button">
-                    <ion-icon name="search-outline"></ion-icon>
-                  </button>
-                </div>
-              </div>
               <div role="tabpanel">
                 <!-- List group -->
                 <div class="level-one">
@@ -1521,15 +1628,15 @@
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
 
   <!-- Modal -->
   <div class="modal fade modifires" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">
@@ -1543,15 +1650,13 @@
           <div class="row">
             <div class="col-6">
               <ul class="list-group">
-                <li class="list-group-item">
-                  <h5>
-                    Size
-
-                  </h5>
-                  <p class="ml-2 mb-0">Item Info
-                    <span></span>
-                  </p>
-                  <p class="ml-2 mb-0">Item Info</p>
+                <li class="list-group-item selected">
+                  <h5>Size <span class="float-right">KWD24</span></h5>
+                  <span class="small text-muted">1 Selected</span>
+                  <hr class="m-1">
+                  <i class="d-block small text-muted">1x text here</i>
+                  <i class="d-block small text-muted">1x text here</i>
+                  <i class="d-block small text-muted">1x text here</i>
                 </li>
                 <li class="list-group-item">
                   <h5>Milk</h5>
@@ -1566,104 +1671,186 @@
               </ul>
             </div>
             <div class="col-6">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <h5>
-                    Size
-                    <i class="small text-info">
-                      <ion-icon name="alert-outline"></ion-icon> Write Important Hint Here!
-                    </i>
-                  </h5>
-                  <div class="row">
-                    <div class="col-4">
-                      <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio1" name="size" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio1">Small</label>
+
+              <div class="section over-hide z-bigger checks_radios_area">
+                <div class="section over-hide z-bigger">
+                  <ul class="list-group custom-list-group">
+                    <li class="list-group-item">
+                      <h5>
+                        Size
+                        <i class="small text-info">
+                          Write Important Hint Here!
+                        </i>
+                      </h5>
+                      <div class="row justify-content-center">
+                        <div class="col-4">
+                          <input class="checkbox-tools" type="radio" name="size" id="size-1" checked>
+                          <label class="for-checkbox-tools" for="size-1">
+                            <!-- <i class='uil uil-line-alt'></i> -->
+                            Small
+                          </label>
+                        </div>
+                        <div class="col-4">
+                          <input class="checkbox-tools" type="radio" name="size" id="size-2">
+                          <label class="for-checkbox-tools" for="size-2">
+                            <!-- <i class='uil uil-vector-square'></i> -->
+                            Medium
+                          </label>
+                        </div>
+                        <div class="col-4">
+                          <input class="checkbox-tools" type="radio" name="size" id="size-3">
+                          <label class="for-checkbox-tools" for="size-3">
+                            <!-- <i class='uil uil-ruler'></i> -->
+                            Large
+                          </label>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio2" name="size" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio2">Medium</label>
+                    </li>
+                    <li class="list-group-item">
+                      <h5>
+                        Milk
+                        <i class="small text-info">
+                          Write Important Hint Here!
+                        </i>
+                      </h5>
+                      <div class="row">
+                        <div class="col-4">
+                          <input class="checkbox-tools" type="radio" name="milk" id="milk-1" checked>
+                          <label class="for-checkbox-tools" for="milk-1">
+                            <!-- <i class='uil uil-line-alt'></i> -->
+                            Option#1
+                          </label>
+                        </div>
+                        <div class="col-4">
+                          <input class="checkbox-tools" type="radio" name="milk" id="milk-2">
+                          <label class="for-checkbox-tools" for="milk-2">
+                            <!-- <i class='uil uil-vector-square'></i> -->
+                            Option#1
+                          </label>
+                        </div>
+                        <div class="col-4">
+                          <input class="checkbox-tools" type="radio" name="milk" id="milk-3">
+                          <label class="for-checkbox-tools" for="milk-3">
+                            <!-- <i class='uil uil-ruler'></i> -->
+                            Option#1
+                          </label>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio3" name="size" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio3">Larg</label>
+                    </li>
+                    <li class="list-group-item">
+                      <h5>
+                        Extras
+                        <i class="small text-info">
+                          Write Important Hint Here!
+                        </i>
+                      </h5>
+                      <div class="row">
+                        <div class="col-3">
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="booking-1">
+                          <label class="for-checkbox-booking" for="booking-1">
+                            <span class="text">Option#1</span>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="booking-2">
+                          <label class="for-checkbox-booking" for="booking-2">
+                            <span class="text">Option#1</span>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="booking-3">
+                          <label class="for-checkbox-booking" for="booking-3">
+                            <span class="text">Option#1</span>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="booking-4">
+                          <label class="for-checkbox-booking" for="booking-4">
+                            <span class="text">Option#1</span>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="booking-5">
+                          <label class="for-checkbox-booking" for="booking-5">
+                            <span class="text">Option#1</span>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="booking-6">
+                          <label class="for-checkbox-booking" for="booking-6">
+                            <span class="text">Option#1</span>
+                          </label>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <h5>
-                    Milk
-                    <i class="small text-info">
-                      <ion-icon name="alert-outline"></ion-icon> Write Important Hint Here!
-                    </i>
-                  </h5>
-                  <div class="row">
-                    <div class="col-4">
-                      <div class="custom-control custom-radio">
-                        <input type="radio" id="milk1" name="milk" class="custom-control-input">
-                        <label class="custom-control-label" for="milk1">Option#1</label>
+                    </li>
+                    <!-- <li class="list-group-item">
+                      <h5>
+                        More
+                        <i class="small text-info">
+                          Write Important Hint Here!
+                        </i>
+                      </h5>
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="extra-qnty">
+                            <h6 class="">KWD 230.00</h6>
+                            <div class="qnty-input">
+                              <div class="numbers-row">
+                                <input type="text" name="" id="" value="1">
+                              </div>
+                            </div>
+                            <h5>Name Here</h5>
+                          </div>
+                        </div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+
+                        <div class="col-12">
+                          <form method="post" action="">
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary">
+                                  <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                              </div>
+                              <input type="text" class="form-control" value="1" placeholder="">
+                              <div class="input-group-append">
+                                <button class="btn btn-outline-secondary">
+                                  <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+                              </div>
+                            </div>
+
+                            <div class="input-group mb-3">
+                              <label for="name">French Hens</label>
+                              <div class="numbers-row">
+                                <input type="text" name="french-hens" id="french-hens" value="3">
+                              </div>
+                            </div>
+
+                            <label for="name">Turtle Doves</label>
+                            <div class="numbers-row">
+                              <input type="text" name="turtle-doves" id="turtle-doves" value="2">
+                            </div>
+
+                            <label for="name">Partridges</label>
+                            <div class="numbers-row">
+                              <input type="text" name="partridge" id="partridge" value="1">
+                            </div>
+
+                          </form>
+                        </div>
+
                       </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="custom-control custom-radio">
-                        <input type="radio" id="milk2" name="milk" class="custom-control-input">
-                        <label class="custom-control-label" for="milk2">Option#2</label>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="custom-control custom-radio">
-                        <input type="radio" id="milk3" name="milk" class="custom-control-input">
-                        <label class="custom-control-label" for="milk3">Option#3</label>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <h5>
-                    Extras
-                    <i class="small text-info">
-                      <ion-icon name="alert-outline"></ion-icon> Write Important Hint Here!
-                    </i>
-                  </h5>
-                  <div class="row">
-                    <div class="col-4">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Option#1</label>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck2">Option#2</label>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck3">
-                        <label class="custom-control-label" for="customCheck3">Option#3</label>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck4">
-                        <label class="custom-control-label" for="customCheck4">Option#4</label>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck5">
-                        <label class="custom-control-label" for="customCheck5">Option#5</label>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>
