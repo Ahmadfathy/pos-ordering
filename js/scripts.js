@@ -1,5 +1,13 @@
 $(document).ready(function(){
+  
   $(".level-three .card").append('<a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="absolute_link"></a>');
+
+  $('.extra-qnty').on('click', function() {
+    $(this).toggleClass('show-inc-dec');
+  });
+
+  $('.numbers-row input').attr('disabled', 'disabled');
+
 });
 
 $(function() {

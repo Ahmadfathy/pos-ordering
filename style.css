@@ -40,7 +40,9 @@ main{
 .nav-search-box .search-input-group{
 
 }
-
+.modal-header .close {
+    margin: -1rem -1rem -1rem 0;
+}
 .nav-search-box .search-input-group .form-control{
   border-radius: 20px 0 0 20px;
 }
@@ -55,7 +57,7 @@ main{
 .nav-search-box .search-input-group .input-group-append button.btn{
   border-radius: 0 20px 20px 0;
 }
-.extra-actions .btn {
+.extra-actions .btn.btn-rounded {
   font-size: 28px;
   width: 40px;
   height: 40px;
@@ -823,6 +825,7 @@ mark{
   cursor: pointer;
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
+	z-index: 5;
 }
 .extra-qnty h6{
   position: absolute;
@@ -830,7 +833,7 @@ mark{
   top: 6px;
   color: #CCC;
   font-size: 12px;
-  z-index: 5
+  z-index: 7
 }
 .extra-qnty h5{
   margin: auto;
@@ -855,14 +858,14 @@ mark{
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-.extra-qnty:hover .qnty-input{
+.extra-qnty.show-inc-dec .qnty-input{
   opacity: 1;
-  z-index: 3;
+  z-index: 6;
 }
-.extra-qnty:hover h5{
+.extra-qnty.show-inc-dec h5{
   position: absolute;
   bottom: 6px;
-  z-index: 3;
+  z-index: 6;
   color: #333 !important;
   opacity: 1;
   -webkit-transition: all 0.35s ease-in-out;
@@ -896,4 +899,126 @@ mark{
 .extra-qnty .numbers-row .dec{
   right: 0;
   border-radius: 0 2px 2px 0;
+}
+.checkout-calc{
+	position: relative;
+}
+.checkout-calc:after{
+	content: '';
+	position: absolute;
+	left: -15px;
+	top: 0px;
+	bottom: 0;
+	height: 100%;
+	width: 1px;
+	background-color: rgba(0,0,0,.04);
+}
+
+
+.checkout-details p{
+  margin-bottom: 0.35rem;
+}
+/* =============== */
+/* Calculater */
+/* =============== */
+/*  */
+/*  */
+.calculator{
+  /* max-width:100vw;
+  max-height:100vh;
+  display:grid;
+  justify-content: center;
+  align-content: center;
+  min-height:100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px); */
+  max-width: 100%;
+  /* max-height: 100vh; */
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  /* min-height: 100vh; */
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: minmax(10px, auto) repeat(5, 60px);
+  
+}
+
+.calculator > button {
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  border: none;
+  border-radius:5px;
+  color: white;
+  background-color:rgb(0,0,0,0.38);
+  margin: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.calculator > button.btn-action{
+  background-color: #646ea0;
+}
+.calculator > button.btn-shortcut{
+  font-size: 0.75rem;
+}
+.calculator > button:hover {
+  /* border-radius:25px; */
+  /* margin:1rem; */
+  /* transition: width 2s, height 2s, transform 2s; */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.calculator [data-operation] {
+  color:coral; 
+}
+
+.calculator [data-all-clear] {
+  color: #ffffff;
+    background-color: #db7070;
+}
+
+.calculator [data-delete] {
+  /* color:coral;  */
+  color: white;
+  background-color: #db7070 !important;
+}
+
+.calculator [data-equals] {
+  color:white; 
+  margin:1rem;
+  border-radius:50%;
+/*   pointer-events:none; */
+  background-color: #bd9513;
+}
+.calculator [data-equals]:hover {
+  background-color: #bd9513;
+  margin:1rem;
+  border-radius:50%;
+  box-shadow: 0px 1px 6px;
+}
+
+
+#output{
+  margin: 0px 0px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: transparent;
+  grid-column: 1/ -1;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  /* padding: 10px; */
+  text-align: right;
+  word-wrap:break-word;
+  word-break:break-all;
+}
+
+#output .previous-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+#output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+  /* margin-bottom: 1rem; */
 }
