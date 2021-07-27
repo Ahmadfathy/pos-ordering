@@ -918,6 +918,17 @@ mark{
 .checkout-details p{
   margin-bottom: 0.35rem;
 }
+
+.dropdown-menu.multi_btn{
+  width: 260px;
+}
+.no-focus:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+.name_here{
+  
+}
 /* =============== */
 /* Calculater */
 /* =============== */

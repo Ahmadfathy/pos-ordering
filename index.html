@@ -44,6 +44,41 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Dropdown Actions
+              </button>
+              <div class="dropdown-menu multi_btn" aria-labelledby="dropdownMenuButton">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <button class="btn btn-sm btn-primary btn-block mb-2">Button</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn btn-sm btn-secondary btn-block mb-2">Button</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn btn-sm btn-info btn-block mb-2">Button</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn btn-sm btn-danger btn-block mb-2">Button</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn btn-sm btn-warning btn-block mb-2">Button</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn btn-sm btn-success btn-block mb-2">Button</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a> -->
+              </div>
+            </div>
+          </li>
           <li class="nav-item text-white active">
             <a class="nav-link" href="#">
               <span>Orders</span>
@@ -70,14 +105,36 @@
               <div class="row align-items-center">
                 <div class="col-3">
                   <div class="info-1">
-                    <ion-icon name="person-circle-outline" class="text-primary" size="large"></ion-icon>
-                    <span>Name Here</span>
+                    <div class="dropdown">
+                      <button class="btn btn-link no-focus dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <ion-icon name="person-circle-outline" class="text-primary" size="large"></ion-icon>
+                        <span class="name_here">Name Here</span>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Name Here</a>
+                        <a class="dropdown-item" href="#">Name Here</a>
+                        <a class="dropdown-item" href="#">Name Here</a>
+                      </div>
+                    </div>
+                    <!-- <span>Name Here</span> -->
                   </div>
                 </div>
                 <div class="col-6 order-title">
                   <div class="text-center p-2">
                     <h6 class="text-dark font-weight-bolder mb-0">#65486</h6>
-                    <p class="m-0">Take Out</p>
+                    <div class="dropdown">
+                      <button class="btn btn-link no-focus dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Take Out
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </div>
+                    </div>
+                    <!-- <p class="m-0"></p> -->
                   </div>
                 </div>
                 <div class="col-3">
@@ -1640,8 +1697,9 @@
         <div class="modal-header">
           <button type="button" class="btn btn-primary btn-sm float-left">Save changes</button>
           <h5 class="modal-title text-center" id="">Checkout | Order #25445</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+          <button type="button" class="btn btn-sm btn-light" data-dismiss="modal" aria-label="Close">
+
+            <span aria-hidden="true">Cancel</span>
           </button>
         </div>
         <div class="modal-body">
@@ -1735,8 +1793,9 @@
           <h5 class="modal-title" id="exampleModalLabel">
             <button type="button" class="btn btn-primary btn-sm">Save changes</button>
           </h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+          <button type="button" class="btn btn-sm btn-light" data-dismiss="modal" aria-label="Close">
+            Cancel
+            <!-- <span aria-hidden="true">&times;</span> -->
           </button>
         </div>
         <div class="modal-body">
