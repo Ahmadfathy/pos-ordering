@@ -131,8 +131,8 @@ main{
   /* width: 77px;
   margin: 0 auto 10px; */
   width: 100%;
-  margin: 0 auto 10px;
-  height: 50px;
+  margin: 0 auto 5px;
+  height: 90px;
 }
 .products-tree .nav-tabs .nav-link span{
   text-overflow: ellipsis;
@@ -1172,38 +1172,79 @@ mark{
 
 
 .calculator-guest {
-    width: 260px;
-    height: 285px;
-    /* height: 340px; */
-    background-color: #2a1f3a;
-    margin: 0 auto;
-    margin-top: 50px;
-    border: 1px solid #333;
-    border-radius: 10px;
-    padding: 10px;
+  width: 260px;
+  height: 285px;
+  /* height: 340px; */
+  background-color: transparent;
+  margin: 0 auto;
+  /* margin-top: 50px; */
+  /* border: 1px solid #333; */
+  border-radius: 10px;
+  padding: 10px;
 }
 form.cal-form {}
 form.cal-form input.dispaly {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: right;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  border-radius: 0px;
+}
+form.cal-form input.dispaly:focus{
+  border: none;
+  box-shadow: none;
+  outline: none;
+  outline: 0px;
 }
 .button-area {}
 .button-line {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .button-line input {
-    cursor: pointer;
-    width: 71px;
-    /* width: 50px; */
-    margin-left: 8px;
-    background-color: #8a8a8a;
-    border-color: #8a8a8a;
-    outline: none;
-
+  cursor: pointer;
+  width: 71px;
+  /* width: 50px; */
+  margin-left: 8px;
+  background-color: #b3c2d1;
+  border-color: transparent;
+  outline: none;
+  color: #666;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.button-line input:focus,
+.button-line input:hover{
+  background-color:#9ba8b6;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  outline: 0px;
+  color: #666;
 }
 .button-line input:nth-child(1) {
-    margin-left: 0;
+  margin-left: 0;
+}
+.guests .modal-dialog{
+  width: 280px;
+}
+
+.user_dropdown .dropdown-menu{
+  left: -150px;
+}
+.user_dropdown button img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+button.btn:focus,
+button.btn:hover,
+button.btn:active {
+  box-shadow: none;
+  outline: none;
+  outline: 0px;
 }
