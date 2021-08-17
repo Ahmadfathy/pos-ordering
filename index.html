@@ -42,15 +42,15 @@
         </ul>
       </div>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse-custom navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <div class="dropdown">
+            <div class="dropdown dropdown-before">
               <button class="btn btn-primary dropdown-toggle no-btn-style" type="button" id="dropdownMenuButton"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown Actions
               </button>
-              <div class="dropdown-menu multi_btn" aria-labelledby="dropdownMenuButton">
+              <div class="dropdown-menu fade-up multi_btn" aria-labelledby="dropdownMenuButton">
                 <div class="container">
                   <div class="row">
                     <div class="col-6">
@@ -89,19 +89,21 @@
               <span>amr.ahmed2061@gmail.com</span>
             </a>
           </li> -->
-          <div class="dropdown user_dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <img src="img/img-1.jpg" class="" alt="">
-              <span>amr</span>
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">amr.ahmed2061@gmail.com</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Logout</a>
-              <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+          <li class="nav-item">
+            <div class="dropdown dropdown-before user_dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/img-1.jpg" class="" alt="">
+                <span>amr</span>
+              </button>
+              <div class="dropdown-menu fade-up" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">amr.ahmed2061@gmail.com</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Logout</a>
+                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+              </div>
             </div>
-          </div>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span class="btn btn-sm btn-success">Close</span>
@@ -1798,16 +1800,18 @@
 
 
   <!-- Modal -->
-  <div class="modal fade modifires guests" id="guestsModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+  <div class="modal fade guests" id="guestsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
+        <div class="modal-header text-center d-block">
+          <h5 class="mb-0">Guests</h5>
+        </div>
         <div class="modal-body p-0">
           <div class="checkout-calc">
             <!-- Calculator wrap start -->
             <div class="calculator-guest">
               <form action="" name="form" class="cal-form">
-                <input type="number" name="display" value="" placeholder="0" class="dispaly form-control">
+                <input type="number" name="display" value="" placeholder="0" class="dispaly form-control" readonly>
 
                 <div class="button-area">
                   <!-- <div class="button-line">
@@ -1819,7 +1823,7 @@
                   <!-- end button-line -->
 
                   <div class="button-line">
-                    <input type="button" value="7" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="7" name="btn" class="btn" onclick="calculate(this.value)">
                     <input type="button" value="8" name="btn" class="btn btn-success" onclick="calculate(this.value)">
                     <input type="button" value="9" name="btn" class="btn btn-success" onclick="calculate(this.value)">
                     <!-- <input type="button" value="*" name="btn" class="btn btn-success" onclick="calculate(this.value)"> -->
@@ -2159,9 +2163,7 @@
   <script src="./js/calculater.js"></script>
 
   <script>
-    function calculate(c) {
-      form.display.value = form.display.value + c;
-    }
+    function calculate(c) { form.display.value = form.display.value + c; }
   </script>
 
 </body>

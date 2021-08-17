@@ -130,9 +130,11 @@ main{
   display: block;
   /* width: 77px;
   margin: 0 auto 10px; */
-  width: 100%;
+  max-width: 100%;
+  width: auto;
   margin: 0 auto 5px;
   height: 90px;
+      min-height: 90px;
 }
 .products-tree .nav-tabs .nav-link span{
   text-overflow: ellipsis;
@@ -1209,7 +1211,7 @@ form.cal-form input.dispaly:focus{
   width: 71px;
   /* width: 50px; */
   margin-left: 8px;
-  background-color: #b3c2d1;
+  background-color: #f4f4f4;
   border-color: transparent;
   outline: none;
   color: #666;
@@ -1218,7 +1220,7 @@ form.cal-form input.dispaly:focus{
 }
 .button-line input:focus,
 .button-line input:hover{
-  background-color:#9ba8b6;
+  background-color:#f1f1f1;
   box-shadow: none;
   border: none;
   outline: none;
@@ -1247,4 +1249,33 @@ button.btn:active {
   box-shadow: none;
   outline: none;
   outline: 0px;
+}
+.navbar-collapse-custom li{
+  padding-top: 5px;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .dropdown-menu-end{ right:0; left: auto;  }
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}
+
+.dropdown-before .dropdown-menu::before{
+  position: absolute;
+  top: -8px;
+  content: '';
+  left: 45px;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  transform: rotateZ(45deg);
+  border-bottom-color: transparent;
+}
+
+.dropdown-before.user_dropdown .dropdown-menu::before{
+  left: auto;
+  right: 10px;
 }
