@@ -1279,3 +1279,7 @@ button.btn:active {
   left: auto;
   right: 10px;
 }
+
+.user_icon{
+  margin-bottom: -10px;
+}
