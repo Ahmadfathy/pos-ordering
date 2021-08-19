@@ -1283,3 +1283,12 @@ button.btn:active {
 .user_icon{
   margin-bottom: -10px;
 }
+
+.orders_noti{
+  position: relative;
+}
+.orders_noti .badge{
+  position: absolute;
+  right: -7px;
+  top: -12px;
+}
