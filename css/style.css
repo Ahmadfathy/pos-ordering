@@ -86,7 +86,7 @@ main{
 }
 .level-one h4,
 .level-two h4,
-.level-three h5{
+.level-three h4{
   color: #777;
   font-weight: 700;
   font-size: 18px;
@@ -95,8 +95,20 @@ main{
   margin-bottom: 1rem;
   /* margin-left: 1rem; */
 }
-.level-three{
+.level-four{
   /* margin-left: 2rem; */
+  margin-top: 20px;
+}
+.level-four .product-box .product-img {
+  height: 100px;
+  margin: 0 auto;
+  background-color: #efefef;
+}
+.level-four .product-box .product-img img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }
 .products-tree .nav-tabs{
   border: none;
@@ -115,7 +127,8 @@ main{
   height: 125px;
 }
 .level-one .nav,
-.level-two .nav {
+.level-two .nav,
+.level-three .nav {
   display: inline-flex;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -288,13 +301,16 @@ main{
 .note_box{
   position: relative;
   margin-top: 0.3rem;
+  padding-left: 25px;
+  overflow: hidden;
 }
 .note_box .add_note{
   position: absolute;
   font-size: 17px;
+  left: 0;
 }
 .note_box p{
-  padding-left: 1.2rem;
+  /* padding-left: 1.2rem; */
   font-size: 13px;
 }
 /**************************************************
@@ -563,6 +579,9 @@ mark{
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear; 
 }
+.checkbox-tools:checked + label {
+  color: #000000 !important;
+}
 .checkbox-tools:not(:checked) + label{
 	background-color: var(--dark-light);
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -583,8 +602,10 @@ mark{
 	width: 100%;
 	height: 100%;
 	border-radius: 4px;
-	background-image: linear-gradient(298deg, #ab44ec, #007bff);
+	/* background-image: linear-gradient(298deg, #ab44ec, #007bff); */
 	z-index: -1;
+  background-color: #FFF;
+  color: #1f2029;
 }
 .checkbox-tools:checked + label .uil,
 .checkbox-tools:not(:checked) + label .uil{
@@ -1291,4 +1312,74 @@ button.btn:active {
   position: absolute;
   right: -7px;
   top: -12px;
+}
+
+
+.value-box {
+  margin: 0 auto;
+  text-align: center;
+}
+.value-box .value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  /* vertical-align: middle; */
+  padding: 11px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 0px;
+}
+
+.value-box .value-button:hover {
+  cursor: pointer;
+}
+
+.value-box #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+.value-box  #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+/* form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+} */
+
+.value-box input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  /* height: 40px; */
+  height: 24px;
+}
+
+.value-box input[type=number]::-webkit-inner-spin-button,
+.value-box input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.extras_list li{
+ position: relative;
+ padding-right: 50px;
+}
+.extras_list li .trash{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
