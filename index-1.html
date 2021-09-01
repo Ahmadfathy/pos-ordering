@@ -1,0 +1,2356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <main>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo-light.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="nav-search-box">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item">
+            <div class="input-group search-input-group">
+              <input type="text" class="form-control" aria-describedby="button-addon4" placeholder="Search">
+              <div class="input-group-append" id="button-addon4">
+                <button class="btn btn-light" type="button">
+                  <ion-icon name="search-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="collapse navbar-collapse-custom navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <div class="dropdown dropdown-before">
+              <button class="btn btn-primary dropdown-toggle no-btn-style" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown Actions
+              </button>
+              <div class="dropdown-menu fade-up multi_btn" aria-labelledby="dropdownMenuButton">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <button class="btn btn-primary btn-block mb-2">Button</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn btn-secondary btn-block mb-2">Button</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn btn-info btn-block mb-2">Button</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn btn-danger btn-block mb-2">Button</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn btn-warning btn-block mb-2">Button</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn btn-success btn-block mb-2">Button</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a> -->
+              </div>
+            </div>
+          </li>
+          <li class="nav-item text-white active">
+            <a class="nav-link" href="#">
+              <span class="orders_noti">
+                <span class="badge badge-pill badge-light">77</span>
+                Orders
+              </span>
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <span>amr.ahmed2061@gmail.com</span>
+            </a>
+          </li> -->
+          <li class="nav-item">
+            <div class="dropdown dropdown-before user_dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/img-1.jpg" class="" alt="">
+                <span>amr</span>
+              </button>
+              <div class="dropdown-menu fade-up" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">amr.ahmed2061@gmail.com</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Logout</a>
+                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="btn btn-sm btn-success">Close</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="new-order">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 pr-1">
+            <div class="order-preview">
+              <div class="row align-items-center">
+                <div class="col-3">
+                  <div class="info-1">
+                    <div class="dropdown">
+                      <button class="btn btn-link no-focus dropdown-toggle align-items-center" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <ion-icon name="person-circle-outline" class="text-primary user_icon" size="large"></ion-icon>
+                        <span class="name_here dropdown-select-1">Name Here 1</span>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-1" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Name Here 2</a>
+                        <a class="dropdown-item" href="#">Name Here 3</a>
+                        <a class="dropdown-item" href="#">Name Here 4</a>
+                      </div>
+                    </div>
+                    <!-- <span>Name Here</span> -->
+                  </div>
+                </div>
+                <div class="col-6 order-title">
+                  <div class="text-center p-2">
+                    <h6 class="text-dark font-weight-bolder mb-0">#65486</h6>
+                    <div class="dropdown">
+                      <button class="btn btn-link no-focus dropdown-toggle " type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="dropdown-select-2">Take Out</span>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-2" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </div>
+                    </div>
+                    <!-- <p class="m-0"></p> -->
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="float-right">
+                    <ion-icon name="apps-outline" class="text-primary" size="large"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="order-details">
+                <div class="table-box">
+                  <table class="table table-borderless">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                          <div class="item_modifires">
+                            <p class="mb-0">Modifire 1</p>
+                            <p class="mb-0">Modifire 2</p>
+                            <p class="mb-0">Modifire 3</p>
+                          </div>
+                          <div class="note_box">
+                            <a href="#" class="add_note">
+                              <ion-icon name="pricetag-outline"></ion-icon>
+                            </a>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetu
+                            </p>
+                          </div>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                          <p class="mb-0">1</p>
+                          <p class="mb-0">2</p>
+                          <p class="mb-0">3</p>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                          <p class="mb-0">KDW50</p>
+                          <p class="mb-0">KDW50</p>
+                          <p class="mb-0">KDW50</p>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                          <p class="mb-0">KDW50</p>
+                          <p class="mb-0">KDW50</p>
+                          <p class="mb-0">KDW50</p>
+                        </td>
+                        <td>
+                          <button class="btn btn-sm btn-danger">
+                            <ion-icon name="trash"></ion-icon>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                          <div class="note_box">
+                            <a href="javascript:void(0)" class="add_note">
+                              <ion-icon name="pricetag-outline"></ion-icon>
+                            </a>
+                            <div class="input-group input-group-sm mb-3 note-input">
+                              <input type="text" class="form-control" placeholder="Add Note!">
+                              <div class="input-group-append">
+                                <button class="btn btn-info" type="button" id="button-addon2">Button</button>
+                              </div>
+                            </div>
+                            <!-- <p>
+                              Text Value Here
+                            </p>-->
+                          </div>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            <div class="value-box">
+                              <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-
+                              </div>
+                              <input type="number" id="number" value="1" />
+                              <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+
+                              </div>
+                            </div>
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td>
+                          <button class="btn btn-sm btn-danger">
+                            <ion-icon name="trash"></ion-icon>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td>
+                          <button class="btn btn-sm btn-danger">
+                            <ion-icon name="trash"></ion-icon>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td>
+                          <button class="btn btn-sm btn-danger">
+                            <ion-icon name="trash"></ion-icon>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td>
+                          <button class="btn btn-sm btn-danger">
+                            <ion-icon name="trash"></ion-icon>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td>
+                          <button class="btn btn-sm btn-danger">
+                            <ion-icon name="trash"></ion-icon>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td>
+                          <button class="btn btn-sm btn-danger">
+                            <ion-icon name="trash"></ion-icon>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td>
+                          <button class="btn btn-sm btn-danger">
+                            <ion-icon name="trash"></ion-icon>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td>
+                          <button class="btn btn-sm btn-danger">
+                            <ion-icon name="trash"></ion-icon>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td>
+                          <button class="btn btn-sm btn-danger">
+                            <ion-icon name="trash"></ion-icon>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td>
+                          <button class="btn btn-sm btn-danger">
+                            <ion-icon name="trash"></ion-icon>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <h6 class="mb-0">
+                            Item Name
+                          </h6>
+                        </td>
+                        <td>
+                          <h6 class="quantity mb-0">
+                            1
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td class="text-right">
+                          <h6 class="mb-0">
+                            KDW50
+                          </h6>
+                        </td>
+                        <td>
+                          <button class="btn btn-sm btn-danger">
+                            <ion-icon name="trash"></ion-icon>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td colspan="5">
+                          <div class="pricing-area">
+                            <p class="m-0">
+                              discounts: <strong>KW 20</strong>
+                            </p>
+                            <p class="m-0">
+                              Sub Total: <strong>KW 30</strong>
+                            </p>
+                            <p class="m-0">
+                              Surcharge: <strong>KW 18</strong>
+                            </p>
+                            <p class="m-0">
+                              Tax: <strong>KW 18</strong>
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+              <div class="actions">
+                <div class="row">
+                  <div class="col-8">
+                    <div class="row">
+                      <div class="col-4 pr-1"><button class="btn btn-block btn-info font-weight-bolder">Cancel</button>
+                      </div>
+                      <div class="col-4 pr-1 pl-1"><button
+                          class="btn btn-block btn-info font-weight-bolder">Hold</button>
+                      </div>
+                      <div class="col-4 pl-1"><button class="btn btn-block btn-info font-weight-bolder">Send</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <p>
+                      <strong>Total</strong>
+                      <strong class="float-right">KWD24,00</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="extra-actions mt-3">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-7">
+                    <div class="row">
+                      <div class="col pr-1">
+                        <button class="btn btn-rounded btn-outline-primary btn-sm" data-toggle="modal"
+                          data-target="#guestsModal">
+                          <ion-icon name="barcode-outline"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="col pr-1 pl-1">
+                        <button class="btn btn-rounded btn-outline-secondary btn-sm">
+                          <ion-icon name="link-outline"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="col pr-1 pl-1">
+                        <button class="btn btn-rounded btn-outline-success btn-sm">
+                          <ion-icon name="add-outline"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="col pr-1 pl-1">
+                        <button class="btn btn-rounded btn-outline-warning btn-sm">
+                          <ion-icon name="share-social-outline"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="col pl-1">
+                        <button class="btn btn-rounded btn-outline-info btn-sm">
+                          <ion-icon name="cog-outline"></ion-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="card shadow border-0">
+                      <button class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#payModal">
+                        <strong>Total: KWD24,00</strong>
+                        <h6 class="text-center mb-0 mt-2">Pay</h6>
+                      </button>
+                      <span class="arrow_indecator">
+                        <button class="btn btn-rounded btn-sm">
+                          <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="btns-area d-flex justify-content-between">
+                <button class="btn btn-primary rounded">
+                  <ion-icon name="qr-code-outline"></ion-icon>
+                </button>
+                <button class="btn btn-info rounded">
+                  <ion-icon name="link-outline"></ion-icon>
+                </button>
+                <button class="btn btn-success rounded">
+                  <ion-icon name="add-circle-outline"></ion-icon>
+                </button>
+                <button class="btn btn-warning rounded">
+                  <ion-icon name="alarm-outline"></ion-icon>
+                </button>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="products-tree">
+              <div role="tabpanel">
+                <!-- List group -->
+                <div class="level-one">
+                  <h4 class="mb-1">Category</h4>
+                  <nav class="nav nav-tabs" id="myList" role="tablist">
+                    <a class="nav-item nav-link active" data-toggle="list" href="#cat1" role="tab">
+                      <img src="img/img-1.jpg" alt="">
+                      <span>Food</span>
+                    </a>
+                    <a class="nav-item nav-link" data-toggle="list" href="#cat2" role="tab">
+                      <img src="img/img-1.jpg" alt="">
+                      <span>Drinks</span>
+                    </a>
+                    <a class="nav-item nav-link" data-toggle="list" href="#cat3" role="tab">
+                      <img src="img/img-1.jpg" alt="">
+                      <span>Clothes</span>
+                    </a>
+                    <a class="nav-item nav-link" data-toggle="list" href="#cat4" role="tab">
+                      <img src="img/img-1.jpg" alt="">
+                      <span>Entertainment</span>
+                    </a>
+                    <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                      <img src="img/img-1.jpg" alt="">
+                      <span>Any</span>
+                    </a>
+                    <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                      <img src="img/img-1.jpg" alt="">
+                      <span>Any</span>
+                    </a>
+                    <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                      <img src="img/img-1.jpg" alt="">
+                      <span>Any</span>
+                    </a>
+                    <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                      <img src="img/img-1.jpg" alt="">
+                      <span>Any</span>
+                    </a>
+                    <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                      <img src="img/img-1.jpg" alt="">
+                      <span>Any</span>
+                    </a>
+                    <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                      <img src="img/img-1.jpg" alt="">
+                      <span>Any</span>
+                    </a>
+                    <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                      <img src="img/img-1.jpg" alt="">
+                      <span>Any</span>
+                    </a>
+                    <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                      <img src="img/img-1.jpg" alt="">
+                      <span>Any</span>
+                    </a>
+                    <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                      <img src="img/img-1.jpg" alt="">
+                      <span>Any</span>
+                    </a>
+                  </nav>
+                </div>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane active" id="cat1" role="tabpanel">
+                    <div class="level-two">
+                      <h4 class="mb-1">Subcategory (Food)</h4>
+                      <nav class="nav nav-tabs" id="myListSub" role="tablist">
+                        <a class="nav-item nav-link active" data-toggle="list" href="#subcat1" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Pizza</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#subcat2" role="tab">
+                          <img src="img/icons/055-poke.svg" alt="">
+                          <span>Chicken</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#subcat3" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Fesh</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#subcat4" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Meat</span>
+                        </a><a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Any</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Any</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Any</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Any</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Any</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Any</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Any</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Any</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Any</span>
+                        </a>
+                      </nav>
+                    </div>
+                    <div class="tab-content level-three">
+                      <div class="tab-pane active" id="subcat1" role="tabpanel">
+                        <h4 class="mb-1">Sub Subcategory (Food)</h4>
+                        <nav class="nav nav-tabs" id="myListSub" role="tablist">
+                          <a class="nav-item nav-link active" data-toggle="list" href="#subsubcat1" role="tab">
+                            <img src="img/img-1.jpg" alt="">
+                            <span>Pizza</span>
+                          </a>
+                          <a class="nav-item nav-link" data-toggle="list" href="#subsubcat2" role="tab">
+                            <img src="img/icons/055-poke.svg" alt="">
+                            <span>Chicken</span>
+                          </a>
+                          <a class="nav-item nav-link" data-toggle="list" href="#subsubcat3" role="tab">
+                            <img src="img/img-1.jpg" alt="">
+                            <span>Fesh</span>
+                          </a>
+                          <a class="nav-item nav-link" data-toggle="list" href="#subsubcat4" role="tab">
+                            <img src="img/img-1.jpg" alt="">
+                            <span>Meat</span>
+                          </a><a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                            <img src="img/img-1.jpg" alt="">
+                            <span>Any</span>
+                          </a>
+                          <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                            <img src="img/img-1.jpg" alt="">
+                            <span>Any</span>
+                          </a>
+                          <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                            <img src="img/img-1.jpg" alt="">
+                            <span>Any</span>
+                          </a>
+                          <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                            <img src="img/img-1.jpg" alt="">
+                            <span>Any</span>
+                          </a>
+                          <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                            <img src="img/img-1.jpg" alt="">
+                            <span>Any</span>
+                          </a>
+                          <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                            <img src="img/img-1.jpg" alt="">
+                            <span>Any</span>
+                          </a>
+                          <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                            <img src="img/img-1.jpg" alt="">
+                            <span>Any</span>
+                          </a>
+                          <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                            <img src="img/img-1.jpg" alt="">
+                            <span>Any</span>
+                          </a>
+                          <a class="nav-item nav-link" data-toggle="list" href="#" role="tab">
+                            <img src="img/img-1.jpg" alt="">
+                            <span>Any</span>
+                          </a>
+                        </nav>
+                        <div class="tab-content level-four">
+                          <div class="tab-pane active" id="subsubcat1" role="tabpanel">
+                            <h5>Products(Name)</h5>
+                            <div class="row">
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card product-box">
+                                  <span class="product-price">
+                                    120 <sup>LE</sup>
+                                  </span>
+                                  <div class="product-img">
+                                    <img src="img/Screenshot_8.png" alt="Product Name" class="">
+                                  </div>
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">
+                                      <span>Pizza #1</span>
+                                    </a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card product-box">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <div class="product-img">
+                                    <img src="img/img-1.jpg" alt="Product Name" class="">
+                                  </div>
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #2</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #3</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #4</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #5</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <span class="product-price">
+                                  120
+                                </span>
+                                <div class="card">
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #6</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120 <sup>LE</sup>
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">
+                                      <span>Pizza #1</span>
+                                    </a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #2</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #3</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #4</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #5</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <span class="product-price">
+                                  120
+                                </span>
+                                <div class="card">
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #6</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120 <sup>LE</sup>
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">
+                                      <span>Pizza #1</span>
+                                    </a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #2</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #3</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #4</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #5</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <span class="product-price">
+                                  120
+                                </span>
+                                <div class="card">
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #6</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120 <sup>LE</sup>
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">
+                                      <span>Pizza #1</span>
+                                    </a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #2</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #3</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #4</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <div class="card">
+                                  <span class="product-price">
+                                    120
+                                  </span>
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #5</a></div>
+                                </div>
+                              </div>
+                              <div class="col-2 pl-1 pr-1">
+                                <span class="product-price">
+                                  120
+                                </span>
+                                <div class="card">
+                                  <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                                  <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                      data-target="#exampleModal" class="text-center">Pizza #6</a></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="subsubcat2" role="tabpanel"></div>
+                          <div class="tab-pane" id="subsubcat3" role="tabpanel"></div>
+                          <div class="tab-pane" id="subsubcat4" role="tabpanel"></div>
+                        </div>
+
+                      </div>
+                      <div class="tab-pane" id="subcat2" role="tabpanel">
+                        <h5 class="mb-1">Products (Chicken)</h5>
+                        <div class="row">
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Chicken #1</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Chicken #2</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Chicken #3</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Chicken #4</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Chicken #5</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Chicken #6</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="subcat3" role="tabpanel">
+                        <h5 class="mb-1">Products (Fesh)</h5>
+                        <div class="row">
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Fesh #1</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Fesh #2</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Fesh #3</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Fesh #4</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Fesh #5</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Fesh #6</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="subcat4" role="tabpanel">
+                        <h5 class="mb-1">Products (Meat)</h5>
+                        <div class="row">
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Meat #1</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Meat #2</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Meat #3</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Meat #4</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Meat #5</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Meat #6</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="cat2" role="tabpanel">
+                    <div class="level-two">
+                      <h4 class="mb-1">Subcategory (Drinks)</h4>
+                      <nav class="nav nav-tabs" id="myListSub" role="tablist">
+                        <a class="nav-item nav-link active" data-toggle="list" href="#subcat1-1" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Cafe</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#subcat2-1" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Tea</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#subcat3-1" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Organic</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#subcat4-1" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Fresh</span>
+                        </a>
+                      </nav>
+                    </div>
+                    <div class="tab-content level-three">
+                      <div class="tab-pane active" id="subcat1-1" role="tabpanel">
+                        <div class="row">
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Cafe #1</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Cafe #2</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Cafe #3</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Cafe #4</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Cafe #5</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Cafe #6</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="subcat2-1" role="tabpanel">
+                        <div class="row">
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Tea #1</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Tea #2</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Tea #3</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Tea #4</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Tea #5</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Tea #6</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="subcat3-1" role="tabpanel">
+                        <div class="row">
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Organic #1</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Organic #2</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Organic #3</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Organic #4</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Organic #5</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Organic #6</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="subcat4-1" role="tabpanel">
+                        <div class="row">
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Fresh #1</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Fresh #2</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Fresh #3</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Fresh #4</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Fresh #5</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Fresh #6</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="cat3" role="tabpanel">
+                    <div class="level-two">
+                      <h4 class="mb-1">Subcategory (Clothes)</h4>
+                      <nav class="nav nav-tabs" id="myListSub" role="tablist">
+                        <a class="nav-item nav-link active" data-toggle="list" href="#subcat1-2" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Men</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#subcat2-2" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Women</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#subcat3-2" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Kids</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#subcat4-2" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Classic</span>
+                        </a>
+                      </nav>
+                    </div>
+                    <div class="tab-content level-three">
+                      <div class="tab-pane active" id="subcat1-2" role="tabpanel">
+                        <div class="row">
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Men #1</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Men #2</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Men #3</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Men #4</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Men #5</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Men #6</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="subcat2-2" role="tabpanel">
+                        <div class="row">
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Women #1</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Women #2</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Women #3</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Women #4</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Women #5</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Women #6</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="subcat3-2" role="tabpanel">
+                        <div class="row">
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Kids #1</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Kids #2</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Kids #3</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Kids #4</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Kids #5</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Kids #6</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="subcat4-2" role="tabpanel">
+                        <div class="row">
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Classic #1</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Classic #2</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Classic #3</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Classic #4</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Classic #5</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Classic #6</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="cat4" role="tabpanel">
+                    <div class="level-two">
+                      <h4 class="mb-1">Subcategory (Entertainment)</h4>
+                      <nav class="nav nav-tabs" id="myListSub" role="tablist">
+                        <a class="nav-item nav-link active" data-toggle="list" href="#subcat1-3" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Cinema</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#subcat2-3" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Gaming</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#subcat3-3" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Travel</span>
+                        </a>
+                        <a class="nav-item nav-link" data-toggle="list" href="#subcat4-3" role="tab">
+                          <img src="img/img-1.jpg" alt="">
+                          <span>Other</span>
+                        </a>
+                      </nav>
+                    </div>
+                    <div class="tab-content level-three">
+                      <div class="tab-pane active" id="subcat1-3" role="tabpanel">
+                        <div class="row">
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Cinema #1</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Cinema #2</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Cinema #3</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Cinema #4</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Cinema #5</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Cinema #6</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="subcat2-3" role="tabpanel">
+                        <div class="row">
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Gaming #1</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Gaming #2</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Gaming #3</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Gaming #4</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Gaming #5</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Gaming #6</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="subcat3-3" role="tabpanel">
+                        <div class="row">
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Travel #1</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Travel #2</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Travel #3</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Travel #4</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Travel #5</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Travel #6</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="subcat4-3" role="tabpanel">
+                        <div class="row">
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Other #1</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Other #2</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Other #3</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Other #4</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Other #5</a></div>
+                            </div>
+                          </div>
+                          <div class="col-2 pl-1 pr-1">
+                            <div class="card">
+                              <img src="img/img-1.jpg" alt="Product Name" class="w-100">
+                              <div class="card-body"><a href="javascript:void(0)" data-toggle="modal"
+                                  data-target="#exampleModal" class="text-center">Other #6</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Modal -->
+  <div class="modal fade modifires" id="payModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn btn-primary btn-sm float-left">Save changes</button>
+          <h5 class="modal-title text-center" id="">Checkout | Order #25445</h5>
+          <button type="button" class="btn btn-sm btn-light" data-dismiss="modal" aria-label="Close">
+
+            <span aria-hidden="true">Cancel</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="checkout-details">
+                <p>
+                  Discounts:
+                  <strong class="float-right text-muted">KWD 0.00</strong>
+                </p>
+                <p>
+                  Service Fee(s):
+                  <strong class="float-right text-muted">KWD 0.00</strong>
+                </p>
+                <p>
+                  Subtotal:
+                  <strong class="float-right text-muted">KWD 0.00</strong>
+                </p>
+                <p>
+                  Surcharge:
+                  <strong class="float-right text-muted">KWD 0.00</strong>
+                </p>
+                <p>
+                  Tax:
+                  <strong class="float-right text-muted">KWD 0.00</strong>
+                </p>
+                <p>
+                  Autogratuity:
+                  <strong class="float-right text-muted">KWD 0.00</strong>
+                </p>
+                <hr>
+                <h5>
+                  Total:
+                  <strong class="float-right text-muted">KWD 0.00</strong>
+                </h5>
+                <hr>
+                <h5>
+                  Balance Due:
+                  <strong class="float-right text-info">KWD 0.00</strong>
+                </h5>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="checkout-calc">
+                <div class="calculator">
+                  <div id="output">
+                    <div data-previous-operand class="previous-operand"></div>
+                    <div data-current-operand class="current-operand"></div>
+                  </div>
+                  <button data-number>7</button>
+                  <button data-number>8</button>
+                  <button data-number>9</button>
+                  <button class="btn-action btn-shortcut">KWD5</button>
+                  <button data-number>4</button>
+                  <button data-number>5</button>
+                  <button data-number>6</button>
+                  <button class="btn-action btn-shortcut">KWD10</button>
+                  <button data-number>1</button>
+                  <button data-number>2</button>
+                  <button data-number>3</button>
+                  <button class="btn-action btn-shortcut">KWD20</button>
+                  <button data-all-clear>C</button>
+                  <button data-number>0</button>
+                  <button data-number>.</button>
+                  <button data-delete class="btn-action">
+                    <ion-icon name="backspace-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //Modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade guests" id="guestsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header text-center d-block">
+          <h5 class="mb-0">Guests</h5>
+        </div>
+        <div class="modal-body p-0">
+          <div class="checkout-calc">
+            <!-- Calculator wrap start -->
+            <div class="calculator-guest">
+              <form action="" name="form" class="cal-form">
+                <input type="number" name="display" value="" placeholder="0" class="dispaly form-control" readonly>
+
+                <div class="button-area">
+                  <!-- <div class="button-line">
+
+                    <input type="button" value="AC" name="btn" class="btn btn-success" onclick="display.value = null">
+                    <input type="button" value="/" name="btn" class="btn btn-success float-right"
+                      onclick="calculate(this.value)">
+                  </div> -->
+                  <!-- end button-line -->
+
+                  <div class="button-line">
+                    <input type="button" value="7" name="btn" class="btn" onclick="calculate(this.value)">
+                    <input type="button" value="8" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="9" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <!-- <input type="button" value="*" name="btn" class="btn btn-success" onclick="calculate(this.value)"> -->
+                  </div><!-- end button-line -->
+
+                  <div class="button-line">
+                    <input type="button" value="4" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="5" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="6" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <!-- <input type="button" value="-" name="btn" class="btn btn-success" onclick="calculate(this.value)"> -->
+                  </div><!-- end button-line -->
+
+                  <div class="button-line">
+                    <input type="button" value="1" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="2" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="3" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <!-- <input type="button" value="+" name="btn" class="btn btn-success" onclick="calculate(this.value)"> -->
+                  </div><!-- end button-line -->
+
+                  <div class="button-line">
+                    <input type="button" value="0" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="00" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="AC" name="btn" class="btn btn-success" onclick="display.value = null">
+                    <!-- <input type="button" value="." name="btn" class="btn btn-success" onclick="calculate(this.value)"> -->
+                    <!-- <input type="button" value="=" name="btn" class="btn btn-success"
+                      onclick="display.value = eval(display.value)"> -->
+                  </div><!-- end button-line -->
+                </div><!-- end button area -->
+              </form><!-- end calculator form -->
+            </div>
+            <!-- end calculator-wrap -->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-sm float-left">Save</button>
+          <button type="button" class="btn btn-sm btn-light" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">Cancel</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //Modal -->
+
+  <!-- Modal -->
+  <div class="modal fade modifires" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+          </h5>
+          <button type="button" class="btn btn-sm btn-light" data-dismiss="modal" aria-label="Close">
+            Cancel
+            <!-- <span aria-hidden="true">&times;</span> -->
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-group extras_list">
+                <li class="list-group-item selected">
+                  <div class="trash">
+                    <button class="btn btn-sm btn-danger">
+                      <ion-icon name="trash" size=""></ion-icon>
+                    </button>
+                  </div>
+                  <h5>Size <span class="float-right">KWD24</span></h5>
+                  <span class="small text-muted">1 Selected</span>
+                  <hr class="m-1">
+                  <i class="d-block small text-muted">1x text here</i>
+                  <i class="d-block small text-muted">1x text here</i>
+                  <i class="d-block small text-muted">1x text here</i>
+                </li>
+                <li class="list-group-item">
+                  <div class="trash">
+                    <button class="btn btn-sm btn-danger">
+                      <ion-icon name="trash" size=""></ion-icon>
+                    </button>
+                  </div>
+                  <h5>Milk</h5>
+                  <p class="ml-2 mb-0">Item Info</p>
+                  <p class="ml-2 mb-0">Item Info</p>
+                </li>
+                <li class="list-group-item">
+                  <h5>Extras</h5>
+                  <p class="ml-2 mb-0">Item Info</p>
+                  <p class="ml-2 mb-0">Item Info</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+
+              <div class="section over-hide z-bigger checks_radios_area">
+                <div class="section over-hide z-bigger">
+                  <ul class="list-group custom-list-group">
+                    <li class="list-group-item">
+                      <h5>
+                        Size
+                        <i class="small text-info">
+                          Write Important Hint Here!
+                        </i>
+                      </h5>
+                      <div class="row justify-content-center">
+                        <div class="col-3">
+                          <input class="checkbox-tools" type="radio" name="size" id="size-1" checked>
+                          <label class="for-checkbox-tools" for="size-1">
+                            <!-- <i class='uil uil-line-alt'></i> -->
+                            Small
+                            <h6 class="mt-3">55 <sup>$</sup> </h6>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-tools" type="radio" name="size" id="size-2">
+                          <label class="for-checkbox-tools" for="size-2">
+                            Medium
+                            <h6 class="mt-3">55 <sup>$</sup> </h6>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-tools" type="radio" name="size" id="size-3">
+                          <label class="for-checkbox-tools" for="size-3">
+                            <!-- <i class='uil uil-ruler'></i> -->
+                            Large
+                            <h6 class="mt-3">55 <sup>$</sup> </h6>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-tools" type="radio" name="size" id="size-4">
+                          <label class="for-checkbox-tools" for="size-4">
+                            <!-- <i class='uil uil-ruler'></i> -->
+                            X Large
+                            <h6 class="mt-3">55 <sup>$</sup> </h6>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <h5>
+                        Milk
+                        <i class="small text-info">
+                          Write Important Hint Here!
+                        </i>
+                      </h5>
+                      <div class="row">
+                        <div class="col-3">
+                          <input class="checkbox-tools" type="radio" name="milk" id="milk-1" checked>
+                          <label class="for-checkbox-tools" for="milk-1">
+                            <!-- <i class='uil uil-line-alt'></i> -->
+                            Option#1
+                            <h6 class="mt-3">55 <sup>$</sup> </h6>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-tools" type="radio" name="milk" id="milk-2">
+                          <label class="for-checkbox-tools" for="milk-2">
+                            Option#1
+                            <h6 class="mt-3">55 <sup>$</sup> </h6>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-tools" type="radio" name="milk" id="milk-3">
+                          <label class="for-checkbox-tools" for="milk-3">
+                            <!-- <i class='uil uil-ruler'></i> -->
+                            Option#1
+                            <h6 class="mt-3">55 <sup>$</sup> </h6>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-tools" type="radio" name="milk" id="milk-4">
+                          <label class="for-checkbox-tools" for="milk-4">
+                            <!-- <i class='uil uil-ruler'></i> -->
+                            Option#1
+                            <h6 class="mt-3">55 <sup>$</sup> </h6>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <h5>
+                        Extras
+                        <i class="small text-info">
+                          Write Important Hint Here!
+                        </i>
+                      </h5>
+                      <div class="row">
+                        <div class="col-3">
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="booking-1">
+                          <label class="for-checkbox-booking" for="booking-1">
+                            <span class="text">Option#1</span>
+                            <h6 class="mt-3">55 <sup>$</sup> </h6>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="booking-2">
+                          <label class="for-checkbox-booking" for="booking-2">
+                            <span class="text">Option#1</span>
+                            <h6 class="mt-3">55 <sup>$</sup> </h6>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="booking-3">
+                          <label class="for-checkbox-booking" for="booking-3">
+                            <span class="text">Option#1</span>
+                            <h6 class="mt-3">55 <sup>$</sup> </h6>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="booking-4">
+                          <label class="for-checkbox-booking" for="booking-4">
+                            <span class="text">Option#1</span>
+                            <h6 class="mt-3">55 <sup>$</sup> </h6>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="booking-5">
+                          <label class="for-checkbox-booking" for="booking-5">
+                            <span class="text">Option#1</span>
+                            <h6 class="mt-3">55 <sup>$</sup> </h6>
+                          </label>
+                        </div>
+                        <div class="col-3">
+                          <input class="checkbox-booking" type="checkbox" name="booking" id="booking-6">
+                          <label class="for-checkbox-booking" for="booking-6">
+                            <span class="text">Option#1</span>
+                            <h6 class="mt-3">55 <sup>$</sup> </h6>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <h5>
+                        More
+                        <i class="small text-info">
+                          Write Important Hint Here!
+                        </i>
+                      </h5>
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="extra-qnty">
+                            <h6 class="">KWD 230.00</h6>
+                            <div class="qnty-input">
+                              <div class="numbers-row">
+                                <input type="text" name="" id="" value="1">
+                              </div>
+                            </div>
+                            <h5>Name Here</h5>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="extra-qnty">
+                            <h6 class="">KWD 230.00</h6>
+                            <div class="qnty-input">
+                              <div class="numbers-row">
+                                <input type="text" name="" id="" value="1">
+                              </div>
+                            </div>
+                            <h5>Name Here</h5>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="extra-qnty">
+                            <h6 class="">KWD 230.00</h6>
+                            <div class="qnty-input">
+                              <div class="numbers-row">
+                                <input type="text" name="" id="" value="1">
+                              </div>
+                            </div>
+                            <h5>Name Here</h5>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="extra-qnty">
+                            <h6 class="">KWD 230.00</h6>
+                            <div class="qnty-input">
+                              <div class="numbers-row">
+                                <input type="text" name="" id="" value="1">
+                              </div>
+                            </div>
+                            <h5>Name Here</h5>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="extra-qnty">
+                            <h6 class="">KWD 230.00</h6>
+                            <div class="qnty-input">
+                              <div class="numbers-row">
+                                <input type="text" name="" id="" value="1">
+                              </div>
+                            </div>
+                            <h5>Name Here</h5>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="extra-qnty">
+                            <h6 class="">KWD 230.00</h6>
+                            <div class="qnty-input">
+                              <div class="numbers-row">
+                                <input type="text" name="" id="" value="1">
+                              </div>
+                            </div>
+                            <h5>Name Here</h5>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="extra-qnty">
+                            <h6 class="">KWD 230.00</h6>
+                            <div class="qnty-input">
+                              <div class="numbers-row">
+                                <input type="text" name="" id="" value="1">
+                              </div>
+                            </div>
+                            <h5>Name Here</h5>
+                          </div>
+                        </div>
+
+                        <div class="col-12">
+                          <form method="post" action="">
+                            <!-- <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary">
+                                  <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                              </div>
+                              <input type="text" class="form-control" value="1" placeholder="">
+                              <div class="input-group-append">
+                                <button class="btn btn-outline-secondary">
+                                  <ion-icon name="remove-outline"></ion-icon>
+                                </button>
+                              </div>
+                            </div> -->
+
+                            <!-- <div class="input-group mb-3">
+                              <label for="name">French Hens</label>
+                              <div class="numbers-row">
+                                <input type="text" name="french-hens" id="french-hens" value="3">
+                              </div>
+                            </div>
+
+                            <label for="name">Turtle Doves</label>
+                            <div class="numbers-row">
+                              <input type="text" name="turtle-doves" id="turtle-doves" value="2">
+                            </div>
+
+                            <label for="name">Partridges</label>
+                            <div class="numbers-row">
+                              <input type="text" name="partridge" id="partridge" value="1">
+                            </div> -->
+
+                          </form>
+                        </div>
+
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Js Scripts -->
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="./js/scripts.js"></script>
+  <script src="./js/calculater.js"></script>
+
+  <script>
+    function calculate(c) { form.display.value = form.display.value + c; }
+  </script>
+
+</body>
+
+</html>
