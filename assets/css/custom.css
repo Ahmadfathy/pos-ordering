@@ -6,16 +6,16 @@
 }
 ::-webkit-scrollbar-track {
   border-radius: 10px;
-  background: #eef0f8;
+  background: #ccc;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background: #d8e0ff;
+  background: #888;
 }
 
-.table-scroll-v-300{
-  height: 300px;
+.table-scroll-v-240{
+  height: 240px;
 }
 
 .order-title{
@@ -142,7 +142,7 @@
 }
 .order-title{
   background: rgb(180,223,255);
-  background: radial-gradient(circle, rgba(180,223,255,1) 0%, rgba(243,250,255,1) 100%);
+  background: radial-gradient(circle, rgba(230,243,252,1) 0%, rgba(254,254,254,1) 100%);
 }
 .level-one{
   margin-bottom: 1rem;
@@ -1129,12 +1129,19 @@ mark{
   position: relative;
 }
 .calc_payment button.payment .btn-txt .arrow_indecator-2{
-  position: absolute;
-  left: -30px;
-  background-color: #FFF;
-  border-radius: 50%;
-  -webkit-animation: bounceRight 2s infinite;
-  animation: bounceRight 2s infinite;
+  
+}
+.calc_payment button.payment .btn-txt .arrow_indecator-2 label.label{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+.calc_payment button.payment .btn-txt .arrow_indecator-2 .txt-payment{
+  font-size: 1.6rem;
+  color: #777;
+}
+.calc_payment button.payment .btn-txt .arrow_indecator-2 i{
+  font-size: 2rem;
 }
 
 
@@ -1192,4 +1199,11 @@ mark{
 .calc_numbers li button.del{
   background-color: #ffe2e5;
   border-bottom-right-radius: 0.25rem;
+}
+.devider-tbl{
+  height: 3px;
+}
+
+.custom-bg{
+  background-color: #875A7b !important;
 }
