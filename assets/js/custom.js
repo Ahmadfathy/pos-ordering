@@ -1,5 +1,19 @@
 $(document).ready(function(){
   
+  $('#new_customer_btn').click(function() {
+    $('.customers_table').hide();
+    $('.new_customer').show();
+  });
+  $('#back_customers_table').click(function() {
+    $('.customers_table').show();
+    $('.new_customer').hide();
+  });
+
+  $(".items_table tbody tr").click(function() {
+    $(this).toggleClass('selected_tr');
+    $(this).siblings().removeClass('selected_tr');
+  });
+  
   $(".level-three .card").append('<a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="absolute_link"></a>');
 
   $('.extra-qnty').on('click', function() {

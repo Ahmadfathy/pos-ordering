@@ -80,7 +80,7 @@
       <!--begin::Wrapper-->
       <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
         <!--begin::Header-->
-        <div id="kt_header" class="header header-fixed custom-bg">
+        <div id="kt_header" class="header header-fixed custom-header">
           <!--begin::Container-->
           <div class="container-fluid d-flex align-items-stretch justify-content-between">
             <!--begin::Header Menu Wrapper-->
@@ -1682,23 +1682,10 @@
                     <div class="card-body pr-5 pl-5 pt-0 pb-0">
                       <div class="row align-items-center">
                         <div class="col-4">
-                          <div class="info-1">
-                            <div class="dropdown">
-                              <button class="btn btn-link no-focus dropdown-toggle align-items-center p-0" type="button"
-                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <ion-icon name="person-circle-outline" class="text-primary user_icon" size="large">
-                                </ion-icon>
-                                <span class="name_here dropdown-select-1">Name Here 1</span>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-1" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Name Here 2</a>
-                                <a class="dropdown-item" href="#">Name Here 3</a>
-                                <a class="dropdown-item" href="#">Name Here 4</a>
-                              </div>
-                            </div>
-                            <!-- <span>Name Here</span> -->
-                          </div>
+                          <a href="#" class="btn btn-light-primary font-weight-bold" data-toggle="modal"
+                            data-target="#usersModal">
+                            <ion-icon name="users" class=""></ion-icon> Users
+                          </a>
                         </div>
                         <div class="col-4 order-title">
                           <div class="text-center pt-2">
@@ -1741,7 +1728,7 @@
                     <div class="card-body p-0">
                       <!--begin::Table-->
                       <div class="table-responsive table-scroll-v-240">
-                        <table class="table table-hover table-vertical-center">
+                        <table class="table table-hover table-vertical-center items_table">
                           <thead>
                             <tr>
                               <th class="p-0 min-w-200px"></th>
@@ -1799,7 +1786,7 @@
                               </td>
                               <td class="text-right pr-5">
                                 <a href="#" class="btn btn-icon btn-light btn-hover-danger btn-sm">
-                                  <span class="svg-icon svg-icon-md svg-icon-primary">
+                                  <span class="svg-icon svg-icon-md svg-icon-danger">
                                     <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                       width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -1834,43 +1821,7 @@
                               </td>
                               <td class="text-right pr-5">
                                 <a href="#" class="btn btn-icon btn-light btn-hover-danger btn-sm">
-                                  <span class="svg-icon svg-icon-md svg-icon-primary">
-                                    <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                      width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <rect x="0" y="0" width="24" height="24" />
-                                        <path
-                                          d="M6,8 L6,20.5 C6,21.3284271 6.67157288,22 7.5,22 L16.5,22 C17.3284271,22 18,21.3284271 18,20.5 L18,8 L6,8 Z"
-                                          fill="#000000" fill-rule="nonzero" />
-                                        <path
-                                          d="M14,4.5 L14,4 C14,3.44771525 13.5522847,3 13,3 L11,3 C10.4477153,3 10,3.44771525 10,4 L10,4.5 L5.5,4.5 C5.22385763,4.5 5,4.72385763 5,5 L5,5.5 C5,5.77614237 5.22385763,6 5.5,6 L18.5,6 C18.7761424,6 19,5.77614237 19,5.5 L19,5 C19,4.72385763 18.7761424,4.5 18.5,4.5 L14,4.5 Z"
-                                          fill="#000000" opacity="0.3" />
-                                      </g>
-                                    </svg>
-                                    <!--end::Svg Icon-->
-                                  </span>
-                                </a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="pl-5">
-                                <a href="#"
-                                  class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">Payrol
-                                  Application</a>
-                              </td>
-                              <td class="text-right">
-                                <span class="text-dark-75 font-weight-500 font-size-lg">4</span>
-                              </td>
-                              <td class="text-right">
-                                <span class="text-dark-75 font-weight-bolder d-block font-size-lg">$560,000</span>
-                              </td>
-                              <td class="text-right">
-                                <span class="text-dark-75 font-weight-bolder d-block font-size-lg">$560,000</span>
-                              </td>
-                              <td class="text-right pr-5">
-                                <a href="#" class="btn btn-icon btn-light btn-hover-danger btn-sm">
-                                  <span class="svg-icon svg-icon-md svg-icon-primary">
+                                  <span class="svg-icon svg-icon-md svg-icon-danger">
                                     <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                       width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -1906,7 +1857,7 @@
                               </td>
                               <td class="text-right pr-5">
                                 <a href="#" class="btn btn-icon btn-light btn-hover-danger btn-sm">
-                                  <span class="svg-icon svg-icon-md svg-icon-primary">
+                                  <span class="svg-icon svg-icon-md svg-icon-danger">
                                     <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                       width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -1926,7 +1877,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td class="">
+                              <td class="pl-5">
                                 <a href="#"
                                   class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">Payrol
                                   Application</a>
@@ -1940,9 +1891,9 @@
                               <td class="text-right">
                                 <span class="text-dark-75 font-weight-bolder d-block font-size-lg">$560,000</span>
                               </td>
-                              <td class="text-right">
+                              <td class="text-right pr-5">
                                 <a href="#" class="btn btn-icon btn-light btn-hover-danger btn-sm">
-                                  <span class="svg-icon svg-icon-md svg-icon-primary">
+                                  <span class="svg-icon svg-icon-md svg-icon-danger">
                                     <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                       width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -1962,7 +1913,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td class="">
+                              <td class="pl-5">
                                 <a href="#"
                                   class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">Payrol
                                   Application</a>
@@ -1976,9 +1927,45 @@
                               <td class="text-right">
                                 <span class="text-dark-75 font-weight-bolder d-block font-size-lg">$560,000</span>
                               </td>
-                              <td class="text-right">
+                              <td class="text-right pr-5">
                                 <a href="#" class="btn btn-icon btn-light btn-hover-danger btn-sm">
-                                  <span class="svg-icon svg-icon-md svg-icon-primary">
+                                  <span class="svg-icon svg-icon-md svg-icon-danger">
+                                    <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <rect x="0" y="0" width="24" height="24" />
+                                        <path
+                                          d="M6,8 L6,20.5 C6,21.3284271 6.67157288,22 7.5,22 L16.5,22 C17.3284271,22 18,21.3284271 18,20.5 L18,8 L6,8 Z"
+                                          fill="#000000" fill-rule="nonzero" />
+                                        <path
+                                          d="M14,4.5 L14,4 C14,3.44771525 13.5522847,3 13,3 L11,3 C10.4477153,3 10,3.44771525 10,4 L10,4.5 L5.5,4.5 C5.22385763,4.5 5,4.72385763 5,5 L5,5.5 C5,5.77614237 5.22385763,6 5.5,6 L18.5,6 C18.7761424,6 19,5.77614237 19,5.5 L19,5 C19,4.72385763 18.7761424,4.5 18.5,4.5 L14,4.5 Z"
+                                          fill="#000000" opacity="0.3" />
+                                      </g>
+                                    </svg>
+                                    <!--end::Svg Icon-->
+                                  </span>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="pl-5">
+                                <a href="#"
+                                  class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-lg">Payrol
+                                  Application</a>
+                              </td>
+                              <td class="text-right">
+                                <span class="text-dark-75 font-weight-500 font-size-lg">4</span>
+                              </td>
+                              <td class="text-right">
+                                <span class="text-dark-75 font-weight-bolder d-block font-size-lg">$560,000</span>
+                              </td>
+                              <td class="text-right">
+                                <span class="text-dark-75 font-weight-bolder d-block font-size-lg">$560,000</span>
+                              </td>
+                              <td class="text-right pr-5">
+                                <a href="#" class="btn btn-icon btn-light btn-hover-danger btn-sm">
+                                  <span class="svg-icon svg-icon-md svg-icon-danger">
                                     <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                       width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -2037,6 +2024,7 @@
                                 <span class="txt-payment">Payment</span>
                               </span>
                             </span>
+                            <h2 class="total-payment">564151 <sup>$</sup></h2>
                           </button>
                         </div>
                         <div class="col">
@@ -4855,6 +4843,174 @@
               </div>
 
 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal-->
+  <div class="modal fade" id="usersModal" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdrop" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal-content customers_table">
+        <div class="modal-header d-block">
+          <div class="row">
+            <div class="col-9">
+              <button type="button" class="btn btn-primary font-weight-bold" id="new_customer_btn">
+                <i class="far fa-user"></i> Create
+              </button>
+              <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Discard</button>
+            </div>
+            <div class="col-3">
+              <input type="text" class="form-control" placeholder="Search.....">
+            </div>
+          </div>
+        </div>
+        <div class="modal-body p-0">
+          <table class="table table-striped mb-0">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Administrator</td>
+                <td>Egypt</td>
+                <td>0111111111</td>
+                <td>a@a.com</td>
+                <td>45</td>
+              </tr>
+              <tr>
+                <td>Administrator</td>
+                <td>Egypt</td>
+                <td>0111111111</td>
+                <td>a@a.com</td>
+                <td>45</td>
+              </tr>
+              <tr>
+                <td>Administrator</td>
+                <td>Egypt</td>
+                <td>0111111111</td>
+                <td>a@a.com</td>
+                <td>45</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-content new_customer">
+        <div class="modal-header d-block">
+          <div class="row">
+            <div class="col-12">
+              <button type="button" class="btn btn-primary font-weight-bold">
+                <i class="far fa-user"></i> Save
+              </button>
+              <button type="button" class="btn btn-light-primary font-weight-bold"
+                id="back_customers_table">Discard</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row align-items-end">
+            <div class="col-sm-3">
+              <div class="form-group">
+                <div class="image-input image-input-outline" id="kt_image_1">
+                  <div class="image-input-wrapper" style="background-image: url(assets/media/users/blank.png)"></div>
+                  <label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
+                    data-action="change" data-toggle="tooltip" title="" data-original-title="Change avatar">
+                    <i class="fa fa-pen icon-sm text-muted"></i>
+                    <input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg">
+                    <input type="hidden" name="profile_avatar_remove">
+                  </label>
+                  <span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
+                    data-action="cancel" data-toggle="tooltip" title="" data-original-title="Cancel avatar">
+                    <i class="ki ki-bold-close icon-xs text-muted"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="form-group">
+                <label for="" class="mb-0">Name</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="form-group"><label for="" class="mb-0">Street</label><input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="form-group"><label for="" class="mb-0">City</label><input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="form-group"><label for="" class="mb-0">PostCode</label><input type="text"
+                  class="form-control"></div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="" class="mb-0">State</label>
+                <select name="" class="form-control" id="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="" class="mb-0">Country</label>
+                <select name="" class="form-control" id="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="form-group"><label for="" class="mb-0">Loyalty</label><input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="form-group">
+                <label for="" class="mb-0">Language</label>
+                <select name="" class="form-control" id="">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="form-group"><label for="" class="mb-0">Email</label><input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="form-group"><label for="" class="mb-0">Phone</label><input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="form-group"><label for="" class="mb-0">Barcode</label><input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="form-group"><label for="" class="mb-0">Tax ID</label><input type="text" class="form-control">
+              </div>
             </div>
           </div>
         </div>

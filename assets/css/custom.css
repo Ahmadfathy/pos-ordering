@@ -1124,12 +1124,21 @@ mark{
   margin: 0;
   border: none;
   background-color: transparent;
+  position: relative;
 }
 .calc_payment button.payment .btn-txt{
   position: relative;
 }
 .calc_payment button.payment .btn-txt .arrow_indecator-2{
   
+}
+.calc_payment button.payment .total-payment {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #353746;
+  font-weight: normal;
 }
 .calc_payment button.payment .btn-txt .arrow_indecator-2 label.label{
   width: 50px;
@@ -1204,6 +1213,20 @@ mark{
   height: 3px;
 }
 
-.custom-bg{
+.custom-header{
   background-color: #875A7b !important;
+}
+
+.items_table tbody tr {
+  cursor: pointer;
+}
+
+.items_table tbody tr.selected_tr td {
+  background-color: #eef0f8;
+}
+.new_customer{
+  display: none;
+}
+#usersModal .modal-body{
+  height: 500px;
 }
