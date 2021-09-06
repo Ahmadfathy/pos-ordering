@@ -267,7 +267,8 @@
   position: absolute;
   right: 0px;
   top: 0px;
-  background-color: #3130a6;
+  /* background-color: #3130a6; */
+  background-color: #9393ea;
   padding: 0.15rem;
   border-radius: 0.25rem;
   font-size: 11px;
@@ -580,7 +581,11 @@ button.btn:active {
   right: 10px;
   bottom: 10px;
 }
-
+.extras_list li .trash button{
+  padding: 0.5rem;
+  display: block;
+  line-height: 1;
+}
 
 
 :root {
@@ -1210,6 +1215,9 @@ mark{
   font-size: 1.6rem;
   font-weight: 600;
 }
+.calc_numbers li button.num_action{
+  font-weight: normal;
+}
 .calc_numbers li button.qty{
   background-color: #c9f7f5;
   border-top-right-radius: 0.25rem;
@@ -1224,7 +1232,7 @@ mark{
 }
 
 .custom-header{
-  background-color: #875A7b !important;
+  background-color: #23245f !important;
 }
 
 .items_table tbody tr {
@@ -1267,4 +1275,13 @@ mark{
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.orders_btn{
+  position: relative;
+}
+.orders_btn .label{
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  padding: 0.2rem;
 }

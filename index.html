@@ -1596,8 +1596,8 @@
               <!--end::Chat-->
               <!--begin::orders-->
               <div class="topbar-item">
-                <button class="btn font-weight-bold btn-light-success mr-2">Orders
-                  <span class="label label-info ml-2">5</span>
+                <button class="btn btn-clean btn-lg orders_btn">Orders
+                  <span class="label label-light-warning label-pill label-inline">127</span>
                 </button>
               </div>
               <!--end::orders-->
@@ -2056,15 +2056,15 @@
                               <li><button>1</button></li>
                               <li><button>2</button></li>
                               <li><button>3</button></li>
-                              <li><button class="qty btn-light-success">Qty</button></li>
+                              <li><button class="qty btn-light-success num_action">Qty</button></li>
                               <li><button>4</button></li>
                               <li><button>5</button></li>
                               <li><button>6</button></li>
-                              <li><button readonly>Disc</button></li>
+                              <li><button readonly class="num_action">Disc</button></li>
                               <li><button>7</button></li>
                               <li><button>8</button></li>
                               <li><button>9</button></li>
-                              <li><button>Price</button></li>
+                              <li><button class="num_action">Price</button></li>
                               <li><button>+/-</button></li>
                               <li><button>0</button></li>
                               <li><button>.</button></li>
@@ -5051,7 +5051,7 @@
   <script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
   <script src="assets/js/scripts.bundle.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script src="./js/calculater.js"></script>
+  <script src="assets/js/num_pad.js"></script>
 
   <script>
     function calculate(c) { form.display.value = form.display.value + c; }
