@@ -1104,6 +1104,7 @@ mark{
   position: relative;
   margin-bottom: 1rem;
   top: -1px;
+  margin: 0 -9px;
 }
 .calc_payment::before {
   position: absolute;
@@ -1139,11 +1140,18 @@ mark{
   right: 0;
   color: #353746;
   font-weight: normal;
+  background-color: #eef0f8;
+  margin: 0;
+  padding: 0 10px;
+  height: 50px;
+  line-height: 50px;
 }
 .calc_payment button.payment .btn-txt .arrow_indecator-2 label.label{
   width: 50px;
   height: 50px;
   line-height: 50px;
+  -webkit-animation: bounceRight 2s infinite;
+  animation: bounceRight 2s infinite;
 }
 .calc_payment button.payment .btn-txt .arrow_indecator-2 .txt-payment{
   font-size: 1.6rem;
@@ -1199,7 +1207,8 @@ mark{
   width: 100%;
   height: 100%;
   color: #777;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 .calc_numbers li button.qty{
   background-color: #c9f7f5;
@@ -1208,6 +1217,7 @@ mark{
 .calc_numbers li button.del{
   background-color: #ffe2e5;
   border-bottom-right-radius: 0.25rem;
+  font-size: 2rem;
 }
 .devider-tbl{
   height: 3px;
@@ -1229,4 +1239,32 @@ mark{
 }
 #usersModal .modal-body{
   height: 500px;
+}
+
+.left_section{
+  position: relative;
+}
+@media (min-width: 768px){
+  .left_section{
+    position: fixed;
+    max-width: 39.66667%;
+    width: 39.66667%;
+  } 
+}
+.search_box{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding: 0;
+}
+.search_box .topbar-item{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
