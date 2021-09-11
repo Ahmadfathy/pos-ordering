@@ -162,6 +162,9 @@
   /* margin-left: 2rem; */
   margin-top: 20px;
 }
+.level-four .product-box{
+  margin-bottom: .75rem;
+}
 .level-four .product-box .product-img {
   height: 100px;
   margin: 0 auto;
@@ -225,6 +228,7 @@
 .products-tree .nav-tabs .nav-item.show .nav-link, 
 .products-tree .nav-tabs .nav-link.active{
   background-color: cadetblue;
+  background-color: #a5adad;
 } 
 .products-tree .nav-tabs .nav-link.active span{
   color: white;
@@ -233,7 +237,7 @@
   margin-right: -5px;
   margin-left: -5px;
   white-space: nowrap;
-  display: inline-flex;
+  /* display: inline-flex; */
   height: 100%;
   max-height: 38vh;
   overflow-x: auto;
@@ -1125,7 +1129,7 @@ mark{
   display: block;
   width: 100%;
   height: 200px;
-  line-height: 200px;
+  /* line-height: 200px; */
   padding: 0;
   margin: 0;
   border: none;
@@ -1134,6 +1138,7 @@ mark{
 }
 .calc_payment button.payment .btn-txt{
   position: relative;
+  top: -30px;
 }
 .calc_payment button.payment .btn-txt .arrow_indecator-2{
   
@@ -1191,6 +1196,12 @@ mark{
   border-right: 1px solid #efefef;
   border-bottom: 1px solid #efefef;
 }
+.calc_numbers li.double-col{
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
 .calc_numbers li:nth-child(4),
 .calc_numbers li:nth-child(8),
 .calc_numbers li:nth-child(12),
@@ -1203,7 +1214,8 @@ mark{
 .calc_numbers li:nth-child(16){
   border-bottom: 0px solid transparent;
 }
-.calc_numbers li button{
+.calc_numbers li button,
+.calc_numbers li .btn{
   border: none;
   background-color: transparent;
   display: block;
@@ -1217,6 +1229,12 @@ mark{
 }
 .calc_numbers li button.num_action{
   font-weight: normal;
+  font-size: 1.1rem;
+}
+@media (min-width: 768px){
+  .calc_numbers li button.num_action{
+  font-size: 1.6rem;
+}
 }
 .calc_numbers li button.qty{
   background-color: #c9f7f5;
@@ -1225,7 +1243,7 @@ mark{
 .calc_numbers li button.del{
   background-color: #ffe2e5;
   border-bottom-right-radius: 0.25rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .devider-tbl{
   height: 3px;
@@ -1247,6 +1265,8 @@ mark{
 }
 #usersModal .modal-body{
   height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .left_section{
@@ -1254,9 +1274,9 @@ mark{
 }
 @media (min-width: 768px){
   .left_section{
-    position: fixed;
+    /* position: fixed;
     max-width: 39.66667%;
-    width: 39.66667%;
+    width: 39.66667%; */
   } 
 }
 .search_box{
@@ -1282,6 +1302,20 @@ mark{
 .orders_btn .label{
   position: absolute;
   top: -2px;
-  right: -3px;
+  left: 28px;
   padding: 0.2rem;
 }
+.guest_btn .label {
+  height: 16px;
+  width: 16px;
+  line-height: 18px;
+}
+@media (max-width: 991.98px){
+  .header-mobile {
+    background-color: #23245f;
+  }
+}
+.table.items_table td, 
+.table.items_table th{
+  vertical-align: top;
+} 

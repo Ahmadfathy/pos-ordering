@@ -9,9 +9,30 @@ $(document).ready(function(){
     $('.new_customer').hide();
   });
 
+  $('.add_qty').click(function() {
+    $('.items_count').addClass('add_item_action');
+    $('.item_price').removeClass('add_item_action');
+    $('.total_items_price').removeClass('add_item_action');
+  });
+  $('.add_discount').click(function() {
+    $('.items_count').removeClass('add_item_action');
+    $('.item_price').removeClass('add_item_action');
+    $('.total_items_price').addClass('add_item_action');
+  });
+  $('.add_item_price').click(function() {
+    $('.items_count').removeClass('add_item_action');
+    $('.item_price').addClass('add_item_action');
+    $('.total_items_price').removeClass('add_item_action');
+  });
+
+
   $(".items_table tbody tr").click(function() {
     $(this).toggleClass('selected_tr');
     $(this).siblings().removeClass('selected_tr');
+  });
+
+  $(".note_input").on("keyup" , function(){
+    $(".selected_tr .note_box span").text($(this).val());
   });
   
   $(".level-three .card").append('<a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal" class="absolute_link"></a>');
@@ -68,3 +89,24 @@ $(function() {
   });
 
 });
+
+// Calculator Numbers Input 
+var resultField = $('.items_table .selected_tr .add_item_action');
+function insertNumber (number) {
+    var existingNumber = resultField.val()
+    resultField.val(existingNumber + number )
+};
+function cNumber() {
+    resultField.val('')
+}
+function calculate(){
+    var result = eval(resultField.val())
+    resultField.val(result)
+}
+function deleteNumber (){
+    var valou = resultField.val()
+
+    if(valou!='') {
+        resultField.val(resultField.val().slice(0,-1));
+    }
+}
