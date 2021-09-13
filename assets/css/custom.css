@@ -1253,12 +1253,42 @@ mark{
   background-color: #23245f !important;
 }
 
-.items_table tbody tr {
+.items_table tbody tr.main_tr {
   cursor: pointer;
+  border-bottom: 1px solid #EEE;
 }
 
 .items_table tbody tr.selected_tr td {
-  background-color: #eef0f8;
+  background-color: #f7f8fe;
+}
+.items_table tbody tr td{
+  border-top: none;
+}
+.items_table tbody tr td table{}
+.items_table tbody tr td table tr{}
+/* .items_table tbody tr td table tr.tr_action_btns{} */
+.items_table tbody tr td table tr.tr_action_btns{
+  display: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.items_table tbody tr.selected_tr td table tr.tr_action_btns{
+  display: table-row;
+}
+.items_table tbody tr td table tr td{}
+
+input.items_count{
+  text-align: center;
+  width: 50px;
+  border: none;
+  background-color: transparent;
+}
+input.items_count:focus {
+  border: none;
+  background-color: transparent;
 }
 .new_customer{
   display: none;
@@ -1319,3 +1349,6 @@ mark{
 .table.items_table th{
   vertical-align: top;
 } 
+#paymentModal .modal-body{
+  min-height: 500px;
+}

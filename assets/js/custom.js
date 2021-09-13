@@ -26,9 +26,9 @@ $(document).ready(function(){
   });
 
 
-  $(".items_table tbody tr").click(function() {
-    $(this).toggleClass('selected_tr');
-    $(this).siblings().removeClass('selected_tr');
+  $(".items_table tbody tr.main_tr .open_actions_tr").click(function() {
+    $(this).parents('tr.main_tr').toggleClass('selected_tr');
+    $(this).parents('tr.main_tr').siblings().removeClass('selected_tr');
   });
 
   $(".note_input").on("keyup" , function(){
@@ -66,7 +66,6 @@ $(document).ready(function(){
 });
 
 $(function() {
-
   $(".numbers-row").prepend('<div class="inc button">+</div>');
   $(".numbers-row").append('<div class="dec button">-</div>');
   $(".button").on("click", function() {
@@ -83,11 +82,8 @@ $(function() {
         newVal = 0;
       }
     }
-
     $button.parent().find("input").val(newVal);
-
   });
-
 });
 
 // Calculator Numbers Input 
@@ -110,3 +106,21 @@ function deleteNumber (){
         resultField.val(resultField.val().slice(0,-1));
     }
 }
+
+
+// Encrease Decrease Items Qty
+function increaseValue() {
+  var value = parseInt(document.getElementById('items_count').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('items_count').value = value;
+}
+
+function decreaseValue() {
+  var value = parseInt(document.getElementById('items_count').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('items_count').value = value;
+}
+
