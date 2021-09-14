@@ -1202,6 +1202,9 @@ mark{
   flex: 0 0 50%;
   max-width: 50%;
 }
+.calc_numbers li.double_row{
+  height: 100px;
+}
 .calc_numbers li:nth-child(4),
 .calc_numbers li:nth-child(8),
 .calc_numbers li:nth-child(12),
@@ -1244,6 +1247,11 @@ mark{
   background-color: #ffe2e5;
   border-bottom-right-radius: 0.25rem;
   font-size: 3rem;
+}
+.calc_numbers_customers{
+  border: 1px solid #EEE;
+  border-radius: 5px;
+  margin-top: 30px;
 }
 .devider-tbl{
   height: 3px;
@@ -1304,6 +1312,9 @@ input.items_count:focus {
 }
 @media (min-width: 768px){
   .left_section{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px;
     /* position: fixed;
     max-width: 39.66667%;
     width: 39.66667%; */
@@ -1351,4 +1362,10 @@ input.items_count:focus {
 } 
 #paymentModal .modal-body{
   min-height: 500px;
+}
+#set_customer_btn{
+  display: none;
+}
+.customer_table tbody tr{
+  cursor: pointer;
 }

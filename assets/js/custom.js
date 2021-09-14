@@ -56,6 +56,24 @@ $(document).ready(function(){
     $('.dropdown-select-2').text(getValue);
   });
 
+  // select customer from table onChange
+  $('.customer_table tbody tr').on('click', function() {
+    $(this).toggleClass('selected_customer_tr bg-light');
+    $(this).siblings().removeClass('selected_customer_tr bg-light');
+
+    $('#set_customer_btn').addClass('d-inline-block');
+    $('#new_customer_btn').addClass('d-none');
+
+  });
+  $('#set_customer_btn').on('click', function() {
+    var getValue = $('.customer_table tbody tr.selected_customer_tr').find('.get_customer_name').text();
+    $(".set_customer_name").text(getValue);
+    // alert(getValue)
+    // $(".set_customer_name").fadeOut(function () {
+    //     $("#fold_p").text(($("#fold_p").text() == 'Fold it') ? 'Expand it' : 'Fold it').fadeIn();
+    // });
+    // $('.dropdown-select-2').text(getValue);
+  });
 
   // Show Hide Note Input 
   $('.note-input').hide();

@@ -1773,7 +1773,7 @@
                             <a href="#" class="btn btn-secondary font-weight-bold" data-toggle="modal"
                               data-target="#usersModal">
                               <i class="fas fa-users"></i>
-                              Customers
+                              <span class="set_customer_name">Customers</span>
                             </a>
                           </div>
                           <div class="col-5 col-sm-4 order-title">
@@ -2278,7 +2278,8 @@
                               <li>
                                 <input type="button" class="btn" value="6" onclick="insertNumber(6)">
                               </li>
-                              <li><button readonly class="add_discount num_action">Disc</button></li>
+                              <li class=""><button readonly class="add_discount num_action">Disc</button></li>
+                              <!-- <li class="double_row"><button readonly class="add_discount num_action">Disc</button></li> -->
                               <li>
                                 <input type="button" class="btn" value="7" onclick="insertNumber(7)">
                               </li>
@@ -5155,7 +5156,7 @@
               </div>
               <div class="row align-items-center">
                 <div class="col text-center">
-                  <ul class="calc_numbers">
+                  <ul class="calc_numbers calc_numbers_customers">
                     <li>
                       <input type="button" class="btn" value="1" onclick="insertNumber(1)">
                     </li>
@@ -5207,7 +5208,10 @@
                   </ul>
                 </div>
                 <div class="col">
-                  Customers
+                  <button class="btn btn-block btn-light-primary font-weight-bold" data-toggle="modal"
+                    data-target="#usersModal">
+                    <i class="fas fa-users"></i> <span class="set_customer_name">Customers</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -5229,6 +5233,9 @@
               <button type="button" class="btn btn-primary font-weight-bold" id="new_customer_btn">
                 <i class="far fa-user"></i> Create
               </button>
+              <button type="button" class="btn btn-primary font-weight-bold" id="set_customer_btn" data-dismiss="modal">
+                <i class="far fa-user"></i> Set Customer
+              </button>
               <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Discard</button>
             </div>
             <div class="col-6 col-md-3">
@@ -5237,7 +5244,7 @@
           </div>
         </div>
         <div class="modal-body p-0">
-          <table class="table table-striped mb-0">
+          <table class="table mb-0 customer_table">
             <thead>
               <tr>
                 <th>Name</th>
@@ -5249,21 +5256,21 @@
             </thead>
             <tbody>
               <tr>
-                <td>Administrator</td>
+                <td class="get_customer_name">Administrator #1</td>
                 <td>Egypt</td>
                 <td>0111111111</td>
                 <td>a@a.com</td>
                 <td>45</td>
               </tr>
               <tr>
-                <td>Administrator</td>
+                <td class="get_customer_name">Administrator #2</td>
                 <td>Egypt</td>
                 <td>0111111111</td>
                 <td>a@a.com</td>
                 <td>45</td>
               </tr>
               <tr>
-                <td>Administrator</td>
+                <td class="get_customer_name">Administrator #3</td>
                 <td>Egypt</td>
                 <td>0111111111</td>
                 <td>a@a.com</td>
