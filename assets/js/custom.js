@@ -26,9 +26,9 @@ $(document).ready(function(){
   });
 
 
-  $(".items_table tbody tr.main_tr .open_actions_tr").click(function() {
-    $(this).parents('tr.main_tr').toggleClass('selected_tr');
-    $(this).parents('tr.main_tr').siblings().removeClass('selected_tr');
+  $(".items_table tbody tr table tr.main_tr").click(function() {
+    $(this).parents('tr').toggleClass('selected_tr');
+    $(this).parents('tr').siblings().removeClass('selected_tr');
   });
 
   $(".note_input").on("keyup" , function(){
