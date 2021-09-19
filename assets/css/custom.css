@@ -1211,6 +1211,7 @@ mark{
 .calc_numbers li:nth-child(16){
   border-right: 0px solid transparent;
 }
+.calc_numbers li:nth-child(4),
 .calc_numbers li:nth-child(13),
 .calc_numbers li:nth-child(14),
 .calc_numbers li:nth-child(15),
@@ -1233,6 +1234,13 @@ mark{
 .calc_numbers li button.num_action{
   font-weight: normal;
   font-size: 1.1rem;
+}
+.calc_numbers li button.add_discount{
+  margin-top: -50px;
+  height: 100px;
+  display: block;
+  position: relative;
+  top: 0;
 }
 @media (min-width: 768px){
   .calc_numbers li button.num_action{
@@ -1368,4 +1376,23 @@ input.items_count:focus {
 }
 .customer_table tbody tr{
   cursor: pointer;
+}
+
+
+.discount_input,
+.price_input{
+  outline: none;
+  border: none;
+  box-shadow: none;
+  width: 22px;
+  background-color: transparent;
+}
+.discount_input:focus,
+.price_input:focus{
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.price_pad{
+  display: none;
 }

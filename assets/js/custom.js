@@ -9,21 +9,32 @@ $(document).ready(function(){
     $('.new_customer').hide();
   });
 
-  $('.add_qty').click(function() {
-    $('.items_count').addClass('add_item_action');
-    $('.item_price').removeClass('add_item_action');
-    $('.total_items_price').removeClass('add_item_action');
+  // $('.add_qty').click(function() {
+  //   $('.items_count').addClass('add_item_action');
+  //   $('.item_price').removeClass('add_item_action');
+  //   $('.total_items_price').removeClass('add_item_action');
+  // });
+  // $('.add_discount').click(function() {
+  //   $('.items_count').removeClass('add_item_action');
+  //   $('.item_price').removeClass('add_item_action');
+  //   $('.discount_input').addClass('add_item_action');
+  // });
+  // $('.add_item_price').click(function() {
+  //   $('.items_count').removeClass('add_item_action');
+  //   $('.item_price').addClass('add_item_action');
+  //   $('.total_items_price').removeClass('add_item_action');
+  // });
+
+  $('.price_action').click(function() {
+    $('.price_pad').show();
+    $('.disc_pad').hide();
   });
-  $('.add_discount').click(function() {
-    $('.items_count').removeClass('add_item_action');
-    $('.item_price').removeClass('add_item_action');
-    $('.total_items_price').addClass('add_item_action');
+  $('.disc_action').click(function() {
+    $('.price_pad').hide();
+    $('.disc_pad').show();
   });
-  $('.add_item_price').click(function() {
-    $('.items_count').removeClass('add_item_action');
-    $('.item_price').addClass('add_item_action');
-    $('.total_items_price').removeClass('add_item_action');
-  });
+
+  
 
 
   $(".items_table tbody tr table tr.main_tr").click(function() {
@@ -104,19 +115,14 @@ $(function() {
   });
 });
 
-// Calculator Numbers Input 
-var resultField = $('.items_table .selected_tr .add_item_action');
+
+
+// Discount Refliction Pad
+var resultField = $('.discount_input');
 function insertNumber (number) {
     var existingNumber = resultField.val()
     resultField.val(existingNumber + number )
 };
-function cNumber() {
-    resultField.val('')
-}
-function calculate(){
-    var result = eval(resultField.val())
-    resultField.val(result)
-}
 function deleteNumber (){
     var valou = resultField.val()
 
@@ -124,6 +130,21 @@ function deleteNumber (){
         resultField.val(resultField.val().slice(0,-1));
     }
 }
+
+// Price Refliction Pad
+var PricerResultField = $('.price_input');
+function priceInsertNumber (number) {
+    var existingNumber = PricerResultField.val()
+    PricerResultField.val(existingNumber + number )
+};
+function priceDeleteNumber (){
+    var valou = PricerResultField.val()
+
+    if(valou!='') {
+        PricerResultField.val(PricerResultField.val().slice(0,-1));
+    }
+}
+
 
 
 // Encrease Decrease Items Qty
