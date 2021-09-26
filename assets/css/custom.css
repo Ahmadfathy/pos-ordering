@@ -1211,7 +1211,6 @@ mark{
 .calc_numbers li:nth-child(16){
   border-right: 0px solid transparent;
 }
-.calc_numbers li:nth-child(4),
 .calc_numbers li:nth-child(13),
 .calc_numbers li:nth-child(14),
 .calc_numbers li:nth-child(15),
@@ -1230,17 +1229,18 @@ mark{
   color: #777;
   font-size: 1.6rem;
   font-weight: 600;
+  padding: 0;
 }
 .calc_numbers li button.num_action{
   font-weight: normal;
   font-size: 1.1rem;
 }
 .calc_numbers li button.add_discount{
-  margin-top: -50px;
+  /* margin-top: -50px;
   height: 100px;
   display: block;
   position: relative;
-  top: 0;
+  top: 0; */
 }
 @media (min-width: 768px){
   .calc_numbers li button.num_action{
@@ -1301,8 +1301,11 @@ input.items_count{
   width: 50px;
   border: none;
   background-color: transparent;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 input.items_count:focus {
+  outline: none;
   border: none;
   background-color: transparent;
 }
@@ -1350,9 +1353,16 @@ input.items_count:focus {
 }
 .orders_btn .label{
   position: absolute;
-  top: -2px;
+  top: -10px;
   left: 28px;
   padding: 0.2rem;
+  font-size: 1.2rem;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 50%;
+  background-color: #cf8312;
+  color: #FFF;
 }
 .guest_btn .label {
   height: 16px;
@@ -1380,7 +1390,8 @@ input.items_count:focus {
 
 
 .discount_input,
-.price_input{
+.price_input,
+.discount_inputCur{
   outline: none;
   border: none;
   box-shadow: none;
@@ -1393,6 +1404,24 @@ input.items_count:focus {
   border: none;
   box-shadow: none;
 }
-.price_pad{
+.price_pad,
+.disc_pad{
+  display: none;
+}
+.chose_payment_methods a{
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+.selected_payment{
+  margin-bottom: 2rem;
+}
+.selected_payment a{
+  padding: 2rem;
+}
+.selected_payment a .remove_btn{
+  float: right;
+}
+
+.counting_payment{
   display: none;
 }

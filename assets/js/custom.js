@@ -28,10 +28,17 @@ $(document).ready(function(){
   $('.price_action').click(function() {
     $('.price_pad').show();
     $('.disc_pad').hide();
+    $('.discCur_pad').hide();
   });
   $('.disc_action').click(function() {
     $('.price_pad').hide();
     $('.disc_pad').show();
+    $('.discCur_pad').hide();
+  });
+  $('.discCur_action').click(function() {
+    $('.price_pad').hide();
+    $('.disc_pad').hide();
+    $('.discCur_pad').show();
   });
 
   
@@ -131,6 +138,20 @@ function deleteNumber (){
     }
 }
 
+// Discount Refliction Pad
+var resultFieldCur = $('.discount_inputCur');
+function insertNumberCur (number) {
+    var existingNumberCur = resultFieldCur.val()
+    resultFieldCur.val(existingNumberCur + number )
+};
+function deleteNumberCur (){
+    var valou = resultFieldCur.val()
+
+    if(valou!='') {
+        resultFieldCur.val(resultFieldCur.val().slice(0,-1));
+    }
+}
+
 // Price Refliction Pad
 var PricerResultField = $('.price_input');
 function priceInsertNumber (number) {
@@ -144,6 +165,7 @@ function priceDeleteNumber (){
         PricerResultField.val(PricerResultField.val().slice(0,-1));
     }
 }
+
 
 
 
@@ -162,4 +184,62 @@ function decreaseValue() {
   value--;
   document.getElementById('items_count').value = value;
 }
+
+
+
+
+// var input = document.getElementById('input'); // get the input element
+// input.addEventListener('input', resizeInput); // bind the "resizeInput" callback on "input" event
+// resizeInput.call(input); // immediately call the function
+
+// function resizeInput() {
+//   this.style.width = this.value.length + "ch";
+// }
+
+/*=============================================
+================ Payment Scripts
+=============================================*/ 
+$(document).ready(function() {
+  $(".chose_payment_methods a").on('click', function() {
+    var choosenMethod = $(this).text();
+    var card = $('<a href="javascript:void(0)" class="list-group-item list-group-item-action" title="Bank">');
+    var removeButton = $('<span class="remove_btn"><i class="text-danger fa fa-trash"></i></span>');
+    removeButton.click(function() {
+      $(this).parent().remove();
+      var count = $('#selected_payment a').length;
+      console.log(count);
+      if(count > 0){
+        $('.basic_payment').hide();
+        $('.counting_payment').show();
+      } else if (count == 0){
+        $('.basic_payment').show();
+        $('.counting_payment').hide();
+      }
+    });
+    card.append(choosenMethod);
+    card.append(removeButton);
+    $("#selected_payment").append(card);
+
+    var count = $('#selected_payment a').length;
+    console.log(count);
+    if(count > 0){
+      $('.basic_payment').hide();
+      $('.counting_payment').show();
+    } else if (count == 0){
+      $('.basic_payment').show();
+      $('.counting_payment').hide();
+    }
+
+  });
+
+
+  $('.calc_payment button.payment').on('click', function(){
+    var finalTotal = $('.final_total').text();
+    var payment_final_method = $('.payment_final_method');
+
+    payment_final_method.text(finalTotal);
+    // alert(finalTotal)
+  })
+
+});
 
