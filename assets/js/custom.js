@@ -243,3 +243,16 @@ $(document).ready(function() {
 
 });
 
+/*=============================================
+================ Show Products By Categories
+=============================================*/ 
+$(document).ready(function() {
+  $('.controls li').on('click', function() {
+    $(this).siblings().hide();
+  });
+
+  $('.callAllCat').on('click', function() {
+    $('.controls li').show();
+  });
+  
+});
