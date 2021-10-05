@@ -186,16 +186,6 @@ function decreaseValue() {
 }
 
 
-
-
-// var input = document.getElementById('input'); // get the input element
-// input.addEventListener('input', resizeInput); // bind the "resizeInput" callback on "input" event
-// resizeInput.call(input); // immediately call the function
-
-// function resizeInput() {
-//   this.style.width = this.value.length + "ch";
-// }
-
 /*=============================================
 ================ Payment Scripts
 =============================================*/ 
@@ -203,6 +193,7 @@ $(document).ready(function() {
   $(".chose_payment_methods a").on('click', function() {
     var choosenMethod = $(this).text();
     var card = $('<a href="javascript:void(0)" class="list-group-item list-group-item-action" title="Bank">');
+    var mountHere = $('<span class="ml-5 mr-2">55.00</span>');
     var removeButton = $('<span class="remove_btn"><i class="text-danger fa fa-trash"></i></span>');
     removeButton.click(function() {
       $(this).parent().remove();
@@ -217,6 +208,7 @@ $(document).ready(function() {
       }
     });
     card.append(choosenMethod);
+    card.append(mountHere);
     card.append(removeButton);
     $("#selected_payment").append(card);
 
@@ -256,3 +248,20 @@ $(document).ready(function() {
   });
   
 });
+
+
+/*=========================================
+============== Payment Pad
+=========================================*/ 
+var PayResultField = $('#selected_payment_input');
+function payInsertNumber (number) {
+  var existingNumber = PayResultField.val()
+  PayResultField.val(existingNumber + number )
+};
+function payDeleteNumber (){
+  var payVal = PayResultField.val()
+
+  if(payVal!='') {
+    PayResultField.val(PayResultField.val().slice(0,-1));
+  }
+}

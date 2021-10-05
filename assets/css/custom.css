@@ -1425,8 +1425,21 @@ input.items_count:focus {
 .counting_payment{
   display: none;
 }
-
-
+#paymentModal button:disabled {
+  cursor: not-allowed;
+}
+.selected_payment_input{
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+.selected_payment_input:focus,
+.selected_payment_input:hover,
+.selected_payment_input:active{
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
 /*====================================
 =========== MIX It Up
 ====================================*/
